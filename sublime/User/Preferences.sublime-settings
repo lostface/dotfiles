@@ -1,0 +1,52 @@
+{
+	"color_scheme": "Packages/User/SublimeLinter/Monokai Extended (SL).tmTheme",
+	"font_size": 11,
+	"ignored_packages":
+	[
+		"Vintage"
+	],
+	"theme": "Default.sublime-theme",
+
+  // Columns in which to display vertical rulers
+  "rulers": [80, 120, 160],
+
+  // The number of spaces a tab is considered equal to
+  "tab_size": 2,
+
+  // Set to true to insert spaces when tab is pressed
+  "translate_tabs_to_spaces": true,
+
+  // Always visualise the viewport on the minimap, as opposed to only
+  // showing it on mouse over
+  "always_show_minimap_viewport": true,
+
+  // Set to true to removing trailing white space on save
+  "trim_trailing_white_space_on_save": true,
+
+  // Set to true to ensure the last line of the file ends in a newline
+  // character when saving
+  "ensure_newline_at_eof_on_save": true,
+
+  // When auto_find_in_selection is enabled, the "Find in Selection" flag
+  // will be enabled automatically when multiple lines of text are selected
+  "auto_find_in_selection": true,
+
+  // Display file encoding in the status bar
+  "show_encoding": true,
+
+  // Display line endings in the status bar
+  "show_line_endings": true,
+
+  // folder_exclude_patterns and file_exclude_patterns control which files
+  // are listed in folders on the side bar. These can also be set on a per-
+  // project basis.
+  "folder_exclude_patterns": [".vscode", ".svn", ".git", ".hg", "CVS"],
+  "file_exclude_patterns": [".eslintcache", "*.pyc", "*.pyo", "*.exe", "*.dll", "*.obj","*.o", "*.a", "*.lib", "*.so", "*.dylib", "*.ncb", "*.sdf", "*.suo", "*.pdb", "*.idb", ".DS_Store", "*.class", "*.psd", "*.db", "*.sublime-workspace"],
+
+  // These files will still show up in the side bar, but won't be included in
+  // Goto Anything or Find in Files
+  "binary_file_patterns": ["dist/", "node_modules/", "*.jpg", "*.jpeg", "*.png", "*.gif", "*.ttf", "*.tga", "*.dds", "*.ico", "*.eot", "*.pdf", "*.swf", "*.jar", "*.zip"],
+
+  // index_exclude_patterns indicate which files won't be indexed.
+  "index_exclude_patterns": ["*.log"]
+}
