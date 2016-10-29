@@ -1,3 +1,4 @@
+# Sublime Text ignores
 Package Control.cache/
 Package Control.ca-certs/
 
@@ -5,3 +6,6 @@ Package Control.last-run
 Package Control.ca-list
 Package Control.ca-bundle
 Package Control.system-ca-bundle
+
+# Visual Studio ignores
+workspaceStorage/

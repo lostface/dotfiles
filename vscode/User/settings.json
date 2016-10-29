@@ -1,0 +1,51 @@
+// Place your settings in this file to overwrite the default settings
+{
+    // Columns at which to show vertical rulers
+    "editor.rulers": [80, 120, 160],
+
+    // Controls whether snippets are shown with other suggestions and how they are sorted.
+    // "editor.snippetSuggestions": "top",
+
+    // The number of spaces a tab is equal to.
+    "editor.tabSize": 2,
+
+    // Number of editors shown in the Open Editors pane. Set it to 0 to hide the pane.
+    "explorer.openEditors.visible": 0,
+
+    // Controls if the height of the open editors section should adapt dynamically to the number of elements or not.
+    "explorer.openEditors.dynamicHeight": false,
+
+    // Controls if the explorer should automatically reveal files when opening them.
+    "explorer.autoReveal": false,
+
+    // Automatically update extensions
+    "extensions.autoUpdate": true,
+
+    // When enabled, will trim trailing whitespace when you save a file.
+    "files.trimTrailingWhitespace": true,
+
+    // Configures if the built-in HTML language support suggests Angular V1 tags and properties.
+    "html.suggest.angular1": false,
+
+    // Configures if the built-in HTML language support suggests Ionic tags, properties and values.
+    "html.suggest.ionic": false,
+
+    // Controls if opened editors from Quick Open show as preview. Preview editors are reused until they are kept (e.g. via double click or editing).
+    "workbench.editor.enablePreviewFromQuickOpen": false,
+
+    // When enabled, will open files in a new window instead of reusing an existing instance.
+    "window.openFilesInNewWindow": false,
+
+    // Controls if opened editors should show in tabs or not.
+    "workbench.editor.showTabs": true,
+
+    // Controls if Quick Open should close automatically once it loses focus.
+    "workbench.quickOpen.closeOnFocusLost": false,
+
+    // Enable usage data and errors to be sent to Microsoft.
+    "telemetry.enableTelemetry": false,
+
+    // Enable crash reports to be sent to Microsoft.
+    // This option requires restart to take effect.
+    "telemetry.enableCrashReporter": false
+}
