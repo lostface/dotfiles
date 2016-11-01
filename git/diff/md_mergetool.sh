@@ -1,0 +1,10 @@
+MERGE_TOOL=C:/development/tools/diff/Meld_3_12_3/Meld.exe;
+
+MERGED=$1;
+LOCAL=$2;
+BASE=$3;
+REMOTE=$4;
+
+$MERGE_TOOL $BASE $LOCAL &
+$MERGE_TOOL $BASE $REMOTE &
+$MERGE_TOOL $LOCAL $MERGED $REMOTE

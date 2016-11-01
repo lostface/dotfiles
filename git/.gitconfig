@@ -1,0 +1,26 @@
+[core]
+    autocrlf = true
+[color]
+    ui = auto
+[user]
+    name = Zoltan Feher
+    email = lostface@fastmail.fm
+[push]
+    default = simple
+[pull]
+    rebase = true
+[mergetool]
+    prompt = true
+    keepBackup = false
+    keepTemporaries = false
+[merge]
+    tool = diffmerge
+[mergetool "diffmerge"]
+    cmd = "D:/development/tools/diff/dm_mergetool.sh" "$MERGED" "$LOCAL" "$BASE" "$REMOTE"
+[diff]
+    tool = diffmerge
+[difftool "diffmerge"]
+    cmd = "D:/development/tools/diff/kd_difftool.sh" "$LOCAL" "$REMOTE"
+[alias]
+    ch = checkout
+    br = branch
