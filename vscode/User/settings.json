@@ -21,6 +21,12 @@
     // Automatically update extensions
     "extensions.autoUpdate": true,
 
+    // Controls auto save of dirty files. Accepted values:  "off", "afterDelay", "onFocusChange" (editor loses focus), "onWindowChange" (window loses focus). If set to "afterDelay", you can configure the delay in "files.autoSaveDelay".
+    "files.autoSave": "onFocusChange",
+
+    // Controls the delay in ms after which a dirty file is saved automatically. Only applies when "files.autoSave" is set to "afterDelay"
+    "files.autoSaveDelay": 1000,
+
     // When enabled, will trim trailing whitespace when you save a file.
     "files.trimTrailingWhitespace": true,
 
@@ -47,5 +53,6 @@
 
     // Enable crash reports to be sent to Microsoft.
     // This option requires restart to take effect.
-    "telemetry.enableCrashReporter": false
+    "telemetry.enableCrashReporter": false,
+    "window.zoomLevel": 0
 }
