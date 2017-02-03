@@ -1,58 +1,116 @@
 // Place your settings in this file to overwrite the default settings
 {
-    // Columns at which to show vertical rulers
-    "editor.rulers": [80, 120, 160],
+  // Columns at which to show vertical rulers
+  "editor.rulers": [80, 120, 160],
 
-    // Controls whether snippets are shown with other suggestions and how they are sorted.
-    // "editor.snippetSuggestions": "top",
+  // The number of spaces a tab is equal to. This setting is overriden based on the file contents when `editor.detectIndentation` is on.
+  "editor.tabSize": 2,
 
-    // The number of spaces a tab is equal to.
-    "editor.tabSize": 2,
+  // Controls after how many characters the editor will wrap to the next line. Setting this to 0 turns on viewport width wrapping (word wrapping). Setting this to -1 forces the editor to never wrap.
+  "editor.wrappingColumn": 0,
 
-    // Number of editors shown in the Open Editors pane. Set it to 0 to hide the pane.
-    "explorer.openEditors.visible": 0,
+  // Controls if lines should wrap. The lines will wrap at min(editor.wrappingColumn, viewportWidthInColumns).
+  "editor.wordWrap": false,
 
-    // Controls if the height of the open editors section should adapt dynamically to the number of elements or not.
-    "explorer.openEditors.dynamicHeight": false,
+  // Controls if the editor should automatically close brackets after opening them
+  "editor.autoClosingBrackets": true,
 
-    // Controls if the explorer should automatically reveal files when opening them.
-    "explorer.autoReveal": false,
+  // Controls whether the editor should render indent guides
+  "editor.renderIndentGuides": true,
 
-    // Automatically update extensions
-    "extensions.autoUpdate": true,
+  // Controls the position of the editor's tabs close buttons or disables them when set to 'off'.
+  "workbench.editor.tabCloseButton": "right",
 
-    // Controls auto save of dirty files. Accepted values:  "off", "afterDelay", "onFocusChange" (editor loses focus), "onWindowChange" (window loses focus). If set to "afterDelay", you can configure the delay in "files.autoSaveDelay".
-    "files.autoSave": "onFocusChange",
+  // Controls where editors open. Select 'left' or 'right' to open editors to the left or right of the current active one. Select 'first' or 'last' to open editors independently from the currently active one.
+  "workbench.editor.openPositioning": "last",
 
-    // Controls the delay in ms after which a dirty file is saved automatically. Only applies when "files.autoSave" is set to "afterDelay"
-    "files.autoSaveDelay": 1000,
+  // Controls if opened editors from Quick Open show as preview. Preview editors are reused until they are kept (e.g. via double click or editing).
+  "workbench.editor.enablePreviewFromQuickOpen": false,
 
-    // When enabled, will trim trailing whitespace when you save a file.
-    "files.trimTrailingWhitespace": true,
+  // Controls if Quick Open should close automatically once it loses focus.
+  "workbench.quickOpen.closeOnFocusLost": false,
 
-    // Configures if the built-in HTML language support suggests Angular V1 tags and properties.
-    "html.suggest.angular1": false,
+  // Controls the dimensions of opening a new window. By default, a new window will open in the center of the screen with small dimensions. When set to  'inherit', the window will get the same dimensions as the last active one. When set to 'maximized', the window will open maximized and fullscreen if configured to 'fullscreen'.
+  "window.newWindowDimensions": "inherit",
 
-    // Configures if the built-in HTML language support suggests Ionic tags, properties and values.
-    "html.suggest.ionic": false,
+  // When enabled, will trim trailing whitespace when saving a file.
+  "files.trimTrailingWhitespace": true,
 
-    // Controls if opened editors from Quick Open show as preview. Preview editors are reused until they are kept (e.g. via double click or editing).
-    "workbench.editor.enablePreviewFromQuickOpen": false,
+  // When enabled, insert a final new line at the end of the file when saving it.
+  "files.insertFinalNewline": true,
 
-    // When enabled, will open files in a new window instead of reusing an existing instance.
-    "window.openFilesInNewWindow": false,
+  // Controls auto save of dirty files. Accepted values:  "off", "afterDelay", "onFocusChange" (editor loses focus), "onWindowChange" (window loses focus). If set to "afterDelay", you can configure the delay in "files.autoSaveDelay".
+  "files.autoSave": "onFocusChange",
 
-    // Controls if opened editors should show in tabs or not.
-    "workbench.editor.showTabs": true,
+  // Number of editors shown in the Open Editors pane. Set it to 0 to hide the pane.
+  "explorer.openEditors.visible": 0,
 
-    // Controls if Quick Open should close automatically once it loses focus.
-    "workbench.quickOpen.closeOnFocusLost": false,
+  // Controls if the explorer should automatically reveal and select files when opening them.
+  "explorer.autoReveal": false,
 
-    // Enable usage data and errors to be sent to Microsoft.
-    "telemetry.enableTelemetry": false,
+  // Controls CSS validation and problem severities.
+  // Enables or disables all validations
+  "css.validate": true,
 
-    // Enable crash reports to be sent to Microsoft.
-    // This option requires restart to take effect.
-    "telemetry.enableCrashReporter": false,
-    "window.zoomLevel": 0
+  // Controls SCSS validation and problem severities.
+  // Enables or disables all validations
+  "scss.validate": true,
+
+  // Controls LESS validation and problem severities.
+  // Enables or disables all validations
+  "less.validate": true,
+
+  // Configures if the built-in HTML language support suggests Angular V1 tags and properties.
+  "html.suggest.angular1": false,
+
+  // Configures if the built-in HTML language support suggests Ionic tags, properties and values.
+  "html.suggest.ionic": false,
+
+  // Configures if the built-in HTML language support validates embedded scripts.
+  "html.validate.scripts": true,
+
+  // Configures if the built-in HTML language support validates embedded styles.
+  "html.validate.styles": true,
+
+  // Enable/disable TypeScript validation.
+  "typescript.validate.enable": true,
+
+  // Enable/disable default TypeScript formatter.
+  "typescript.format.enable": true,
+
+  // Enable/disable JavaScript validation.
+  "javascript.validate.enable": true,
+
+  // Enable/disable default JavaScript formatter.
+  "javascript.format.enable": true,
+
+  // Enable/disable built-in PHP validation.
+  "php.validate.enable": false,
+
+  // Automatically update extensions
+  "extensions.autoUpdate": true,
+
+
+  // Control whether htmlhint is enabled for HTML files or not.
+  "htmlhint.enable": true,
+
+  // Control whether tslint is enabled for TypeScript files or not.
+  "tslint.enable": false,
+
+  // Control whether tslint is enabled for JavaScript files or not.
+  "tslint.jsEnable": true,
+
+  // Controls whether eslint is enabled for JavaScript files or not.
+  "eslint.enable": false,
+
+  // For import command. The declaration type used for require()
+  "npm-intellisense.importDeclarationType": "let",
+
+
+  // Enable crash reports to be sent to Microsoft.
+  // This option requires restart to take effect.
+  "telemetry.enableCrashReporter": false,
+
+  // Enable usage data and errors to be sent to Microsoft.
+  "telemetry.enableTelemetry": false
 }

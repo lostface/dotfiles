@@ -1,4 +1,4 @@
-MERGE_TOOL=D:/development/tools/diff/DiffMerge_4_2_0_697_stable_x64/sgdm.exe;
+MERGE_TOOL=C:/dev/tools/diff/DiffMerge_4_2_0_697_stable_x64/sgdm.exe;
 
 MERGED=$1;
 LOCAL=$2;
