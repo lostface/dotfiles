@@ -111,7 +111,7 @@
 
   // Specifies the base folders to search for git repositories
   "gitProjectManager.baseProjectsFolders": [
-    "C:/dev/projects"
+    "C:/dev"
   ],
 
   // Indicate the maximum depth of folder recursion to search for projects. Any value below 1 means there is no limit
