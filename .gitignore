@@ -1,5 +1,7 @@
 .vscode/
 
+gpm-recentItems.json
+
 # Sublime Text ignores
 Package Control.cache/
 Package Control.ca-certs/
