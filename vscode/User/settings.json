@@ -106,6 +106,19 @@
   // For import command. The declaration type used for require()
   "npm-intellisense.importDeclarationType": "let",
 
+  // Specifies folders to be ignored. (node_modules for example), improving search performance
+  "gitProjectManager.ignoredFolders": ["node_modules"],
+
+  // Specifies the base folders to search for git repositories
+  "gitProjectManager.baseProjectsFolders": [
+    "C:/dev/projects"
+  ],
+
+  // Indicate the maximum depth of folder recursion to search for projects. Any value below 1 means there is no limit
+  "gitProjectManager.maxDepthRecursion": 7,
+
+  // Number of recent projects to be kept to use with GPM - Open Recent
+  "gitProjectManager.recentProjectsListSize": 7,
 
   // Enable crash reports to be sent to Microsoft.
   // This option requires restart to take effect.
