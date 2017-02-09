@@ -1,6 +1,7 @@
 .vscode/
 
 gpm-recentItems.json
+gpm_projects.json
 
 # Sublime Text ignores
 Package Control.cache/
