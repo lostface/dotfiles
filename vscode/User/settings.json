@@ -114,6 +114,9 @@
     "C:/dev"
   ],
 
+  // Specifies whether saves repository folders' data between sessions
+  "gitProjectManager.storeRepositoriesBetweenSessions": true,
+
   // Indicate the maximum depth of folder recursion to search for projects. Any value below 1 means there is no limit
   "gitProjectManager.maxDepthRecursion": 7,
 
