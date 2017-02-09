@@ -16,11 +16,11 @@
 [merge]
     tool = diffmerge
 [mergetool "diffmerge"]
-    cmd = "C:/dev/tools/diff/dm_mergetool.sh" "$MERGED" "$LOCAL" "$BASE" "$REMOTE"
+    cmd = "~/dev/tools/diff/dm_mergetool.sh" "$MERGED" "$LOCAL" "$BASE" "$REMOTE"
 [diff]
     tool = diffmerge
 [difftool "diffmerge"]
-    cmd = "C:/dev/tools/diff/kd_difftool.sh" "$LOCAL" "$REMOTE"
+    cmd = "~/dev/tools/diff/kd_difftool.sh" "$LOCAL" "$REMOTE"
 [alias]
     ch = checkout
     br = branch
