@@ -1,4 +1,4 @@
 cd %APPDATA%\Code\
-mkdir c:\dev\dotfiles\vscode
-move User c:\dev\dotfiles\vscode\
-mklink /D User c:\dev\dotfiles\vscode\User
+mkdir c:\Users\zfeher\dotfiles\vscode
+move User c:\Users\zfeher\dotfiles\vscode\
+mklink /D User c:\Users\zfeher\dotfiles\vscode\User

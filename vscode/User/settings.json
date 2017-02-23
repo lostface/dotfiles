@@ -7,7 +7,7 @@
   "editor.tabSize": 2,
 
   // Controls after how many characters the editor will wrap to the next line. Setting this to 0 turns on viewport width wrapping (word wrapping). Setting this to -1 forces the editor to never wrap.
-  "editor.wrappingColumn": 0,
+  "editor.wrappingColumn": 160,
 
   // Controls if lines should wrap. The lines will wrap at min(editor.wrappingColumn, viewportWidthInColumns).
   "editor.wordWrap": false,
@@ -111,14 +111,14 @@
 
   // Specifies the base folders to search for git repositories
   "gitProjectManager.baseProjectsFolders": [
-    "C:/dev"
+    "%USERPROFILE%"
   ],
 
   // Specifies whether saves repository folders' data between sessions
-  "gitProjectManager.storeRepositoriesBetweenSessions": true,
+  "gitProjectManager.storeRepositoriesBetweenSessions": false,
 
   // Indicate the maximum depth of folder recursion to search for projects. Any value below 1 means there is no limit
-  "gitProjectManager.maxDepthRecursion": 7,
+  "gitProjectManager.maxDepthRecursion": 3,
 
   // Number of recent projects to be kept to use with GPM - Open Recent
   "gitProjectManager.recentProjectsListSize": 7,
