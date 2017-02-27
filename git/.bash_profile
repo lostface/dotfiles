@@ -15,14 +15,14 @@ alias grba='git rebase --abort';
 
 alias gcp='git cherry-pick';
 
-alias gm='git merge';
-alias gmf='git merge --no-ff';
-alias gmo='git merge origin/`git symbolic-ref --short HEAD`';
-alias gmm='git merge origin/master';
-alias gmd='git merge origin/development';
-alias gmof='git merge --no-ff origin/`git symbolic-ref --short HEAD`';
-alias gmmf='git merge --no-ff origin/master';
-alias gmdf='git merge --no-ff origin/development';
+alias gm='git merge --no-ff';
+alias gmo='git merge --no-ff origin/`git symbolic-ref --short HEAD`';
+alias gmm='git merge --no-ff origin/master';
+alias gmd='git merge --no-ff origin/development';
+alias gmf='git merge --ff-only';
+alias gmof='git merge --ff-only origin/`git symbolic-ref --short HEAD`';
+alias gmmf='git merge --ff-only origin/master';
+alias gmdf='git merge --ff-only origin/development';
 
 alias gd='git diff';
 alias gds='git diff --staged';
