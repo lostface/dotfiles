@@ -6,11 +6,18 @@
   // The number of spaces a tab is equal to. This setting is overriden based on the file contents when `editor.detectIndentation` is on.
   "editor.tabSize": 2,
 
-  // Controls after how many characters the editor will wrap to the next line. Setting this to 0 turns on viewport width wrapping (word wrapping). Setting this to -1 forces the editor to never wrap.
-  "editor.wrappingColumn": 160,
+  // Controls if the minimap is shown
+  "editor.minimap.enabled": true,
 
-  // Controls if lines should wrap. The lines will wrap at min(editor.wrappingColumn, viewportWidthInColumns).
-  "editor.wordWrap": false,
+  // Controls how lines should wrap. Can be:
+  //  - 'off' (disable wrapping),
+  //  - 'on' (viewport wrapping),
+  //  - 'wordWrapColumn' (wrap at `editor.wordWrapColumn`) or
+  //  - 'bounded' (wrap at minimum of viewport and `editor.wordWrapColumn`).
+  "editor.wordWrap": "bounded",
+
+  // Controls the wrapping column of the editor when `editor.wordWrap` is 'wordWrapColumn' or 'bounded'.
+  "editor.wordWrapColumn": 160,
 
   // Controls if the editor should automatically close brackets after opening them
   "editor.autoClosingBrackets": true,
@@ -128,5 +135,7 @@
   "telemetry.enableCrashReporter": false,
 
   // Enable usage data and errors to be sent to Microsoft.
-  "telemetry.enableTelemetry": false
+  "telemetry.enableTelemetry": false,
+  "window.zoomLevel": 0,
+  "workbench.iconTheme": "vs-seti"
 }

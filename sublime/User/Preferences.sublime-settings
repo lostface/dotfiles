@@ -68,14 +68,11 @@
 		120,
 		160
 	],
+	"save_on_focus_lost": true,
 	"show_encoding": true,
 	"show_line_endings": true,
 	"tab_size": 2,
 	"theme": "Default.sublime-theme",
 	"translate_tabs_to_spaces": true,
-	"trim_trailing_white_space_on_save": true,
-
-  // Set to true to automatically save files when switching to a different file
-  // or application
-  "save_on_focus_lost": true,
+	"trim_trailing_white_space_on_save": true
 }
