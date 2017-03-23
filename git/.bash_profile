@@ -10,8 +10,15 @@ alias grb='git rebase -i --autostash';
 alias grbo='git rebase -i --autostash origin/`git symbolic-ref --short HEAD`';
 alias grbm='git rebase -i --autostash origin/master';
 alias grbd='git rebase -i --autostash origin/development';
+
+alias grbp='git rebase -p --autostash';
+alias grbpo='git rebase -p --autostash origin/`git symbolic-ref --short HEAD`';
+alias grbpm='git rebase -p --autostash origin/master';
+alias grbpd='git rebase -p --autostash origin/development';
+
 alias grbc='git rebase --continue';
 alias grba='git rebase --abort';
+alias grbq='git rebase --quit';
 
 alias gcp='git cherry-pick';
 
