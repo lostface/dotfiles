@@ -74,6 +74,9 @@ alias gbr='git branch';
 alias gbrt='git branch -v';
 alias gmt='git mergetool';
 alias gdt='git difftool';
+alias gdto='git difftool head origin/`git symbolic-ref --short HEAD`';
+alias gdtd='git difftool origin/development head';
+alias gdtm='git difftool origin/master head';
 alias grf='git reflog';
 
 alias gbs='git bisect';

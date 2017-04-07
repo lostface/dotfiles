@@ -53,7 +53,7 @@
   "explorer.openEditors.visible": 0,
 
   // Controls if the explorer should automatically reveal and select files when opening them.
-  "explorer.autoReveal": false,
+  "explorer.autoReveal": true,
 
   // Controls CSS validation and problem severities.
   // Enables or disables all validations
