@@ -25,6 +25,13 @@
   // Controls whether the editor should render indent guides
   "editor.renderIndentGuides": true,
 
+  // Controls if suggestions should automatically show up while typing
+  "editor.quickSuggestions": {
+    "other": true,
+    "comments": true,
+    "strings": true
+  },
+
   // Controls the position of the editor's tabs close buttons or disables them when set to 'off'.
   "workbench.editor.tabCloseButton": "right",
 
@@ -36,6 +43,12 @@
 
   // Controls if Quick Open should close automatically once it loses focus.
   "workbench.quickOpen.closeOnFocusLost": false,
+
+  // Controls if editors showing a file should close automatically when the file is deleted or renamed by some other process. Disabling this will keep the editor open as dirty on such an event. Note that deleting from within the application will always close the editor and that dirty files will never close to preserve your data.
+  "workbench.editor.closeOnFileDelete": false,
+
+  // Controls if an editor is revealed in any of the visible groups if opened. If disabled, an editor will prefer to open in the currently active editor group. If enabled, an already opened editor will be revealed instead of opened again in the currently active editor group. Note that there are some cases where this setting is ignored, e.g. when forcing an editor to open in a specific group or to the side of the currently active group.
+  "workbench.editor.revealIfOpen": true,
 
   // Controls the dimensions of opening a new window. By default, a new window will open in the center of the screen with small dimensions. When set to  'inherit', the window will get the same dimensions as the last active one. When set to 'maximized', the window will open maximized and fullscreen if configured to 'fullscreen'.
   "window.newWindowDimensions": "inherit",
