@@ -8,12 +8,13 @@
 [push]
     default = simple
 [pull]
-    rebase = true
+    rebase = preserve
 [mergetool]
     prompt = true
     keepBackup = false
     keepTemporaries = false
 [merge]
+    conflictStyle = diff3
     tool = diffmerge
 [mergetool "diffmerge"]
     cmd = "C:/dev/tools/diff/dm_mergetool.sh" "$MERGED" "$LOCAL" "$BASE" "$REMOTE"
