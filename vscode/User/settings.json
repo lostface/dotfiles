@@ -6,17 +6,31 @@
   // The number of spaces a tab is equal to. This setting is overriden based on the file contents when `editor.detectIndentation` is on.
   "editor.tabSize": 2,
 
-  // Controls after how many characters the editor will wrap to the next line. Setting this to 0 turns on viewport width wrapping (word wrapping). Setting this to -1 forces the editor to never wrap.
-  "editor.wrappingColumn": 0,
+  // Controls if the minimap is shown
+  "editor.minimap.enabled": true,
 
-  // Controls if lines should wrap. The lines will wrap at min(editor.wrappingColumn, viewportWidthInColumns).
-  "editor.wordWrap": false,
+  // Controls how lines should wrap. Can be:
+  //  - 'off' (disable wrapping),
+  //  - 'on' (viewport wrapping),
+  //  - 'wordWrapColumn' (wrap at `editor.wordWrapColumn`) or
+  //  - 'bounded' (wrap at minimum of viewport and `editor.wordWrapColumn`).
+  "editor.wordWrap": "off",
+
+  // Controls the wrapping column of the editor when `editor.wordWrap` is 'wordWrapColumn' or 'bounded'.
+  "editor.wordWrapColumn": 160,
 
   // Controls if the editor should automatically close brackets after opening them
   "editor.autoClosingBrackets": true,
 
   // Controls whether the editor should render indent guides
   "editor.renderIndentGuides": true,
+
+  // Controls if suggestions should automatically show up while typing
+  "editor.quickSuggestions": {
+    "other": true,
+    "comments": true,
+    "strings": true
+  },
 
   // Controls the position of the editor's tabs close buttons or disables them when set to 'off'.
   "workbench.editor.tabCloseButton": "right",
@@ -26,6 +40,12 @@
 
   // Controls if opened editors from Quick Open show as preview. Preview editors are reused until they are kept (e.g. via double click or editing).
   "workbench.editor.enablePreviewFromQuickOpen": false,
+
+  // Controls if editors showing a file should close automatically when the file is deleted or renamed by some other process. Disabling this will keep the editor open as dirty on such an event. Note that deleting from within the application will always close the editor and that dirty files will never close to preserve your data.
+  "workbench.editor.closeOnFileDelete": false,
+
+  // Controls if an editor is revealed in any of the visible groups if opened. If disabled, an editor will prefer to open in the currently active editor group. If enabled, an already opened editor will be revealed instead of opened again in the currently active editor group. Note that there are some cases where this setting is ignored, e.g. when forcing an editor to open in a specific group or to the side of the currently active group.
+  "workbench.editor.revealIfOpen": true,
 
   // Controls if Quick Open should close automatically once it loses focus.
   "workbench.quickOpen.closeOnFocusLost": false,
@@ -46,7 +66,7 @@
   "explorer.openEditors.visible": 0,
 
   // Controls if the explorer should automatically reveal and select files when opening them.
-  "explorer.autoReveal": false,
+  "explorer.autoReveal": true,
 
   // Controls CSS validation and problem severities.
   // Enables or disables all validations
@@ -77,6 +97,9 @@
 
   // Enable/disable default TypeScript formatter.
   "typescript.format.enable": true,
+
+  // Enable/disable implementations CodeLens. Requires TypeScript >= 2.2.0.
+  "typescript.implementationsCodeLens.enabled": true,
 
   // Enable/disable JavaScript validation.
   "javascript.validate.enable": true,
@@ -128,5 +151,6 @@
   "telemetry.enableCrashReporter": false,
 
   // Enable usage data and errors to be sent to Microsoft.
-  "telemetry.enableTelemetry": false
+  "telemetry.enableTelemetry": false,
+  "workbench.iconTheme": "vs-seti"
 }
