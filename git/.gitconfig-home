@@ -9,19 +9,33 @@
     default = simple
 [pull]
     rebase = preserve
+[merge]
+    conflictStyle = diff3
+    tool = code
 [mergetool]
     prompt = true
     keepBackup = false
     keepTemporaries = false
-[merge]
-    conflictStyle = diff3
-    tool = diffmerge
 [mergetool "diffmerge"]
-    cmd = "C:/dev/tools/diff/dm_mergetool.sh" "$MERGED" "$LOCAL" "$BASE" "$REMOTE"
+    cmd = "C:/dev/dotfiles/git/diff/dm_mergetool.sh" "$MERGED" "$LOCAL" "$BASE" "$REMOTE"
+    trustExitCode = true
+[mergetool "diffmergeg"]
+    cmd = "C:/dev/dotfiles/git/diff/dmg_mergetool.sh" "$MERGED" "$LOCAL" "$BASE" "$REMOTE"
+    trustExitCode = false
+[mergetool "kdiff"]
+    cmd = "C:/dev/dotfiles/git/diff/kd_mergetool.sh" "$MERGED" "$LOCAL" "$BASE" "$REMOTE"
+    trustExitCode = true
+[mergetool "code"]
+    cmd = "C:/dev/dotfiles/git/diff/cd_mergetool.sh" "$MERGED" "$LOCAL" "$BASE" "$REMOTE"
+    trustExitCode = false
 [diff]
-    tool = diffmerge
+    tool = kdiff
 [difftool "diffmerge"]
-    cmd = "C:/dev/tools/diff/kd_difftool.sh" "$LOCAL" "$REMOTE"
+    cmd = "C:/dev/dotfiles/git/diff/dm_difftool.sh" "$LOCAL" "$REMOTE" "$MERGED"
+[difftool "kdiff"]
+    cmd = "C:/dev/dotfiles/git/diff/kd_difftool.sh" "$LOCAL" "$REMOTE" "$MERGED"
+[difftool "code"]
+    cmd = "code -n -w -d $LOCAL $REMOTE"
 [alias]
     ch = checkout
     br = branch
