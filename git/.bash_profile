@@ -23,6 +23,8 @@ alias grbq='git rebase --quit';
 alias gcp='git cherry-pick';
 
 alias gm='git merge --no-ff';
+alias gma='git merge --abort';
+alias gmc='git merge --continue';
 alias gmo='git merge --no-ff origin/`git symbolic-ref --short HEAD`';
 alias gmm='git merge --no-ff origin/master';
 alias gmd='git merge --no-ff origin/development';

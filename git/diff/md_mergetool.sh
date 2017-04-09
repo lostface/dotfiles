@@ -1,4 +1,4 @@
-MERGE_TOOL=C:/development/tools/diff/Meld_3_12_3/Meld.exe;
+MERGE_TOOL=C:/dev/tools/diff/Meld/Meld.exe;
 
 MERGED=$1;
 LOCAL=$2;
