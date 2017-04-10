@@ -1,5 +1,5 @@
-MERGE_TOOL=C:/dev/tools/diff/DiffMerge_4_2_0_697_stable_x64/sgdm.exe;
-DIFF_TOOL=C:/dev/tools/diff/KDiff3/kdiff3.exe;
+MERGE_TOOL=sgdm.exe;
+DIFF_TOOL=kdiff3.exe;
 
 MERGED=$1;
 LOCAL=$2;
