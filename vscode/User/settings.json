@@ -150,5 +150,6 @@
   // Enable usage data and errors to be sent to Microsoft.
   "telemetry.enableTelemetry": false,
   "window.zoomLevel": 0,
-  "workbench.iconTheme": "vs-seti"
+  "workbench.iconTheme": "vs-seti",
+  "terminal.integrated.shell.windows": "C:\\Windows\\Sysnative\\WindowsPowerShell\\v1.0\\powershell.exe"
 }
