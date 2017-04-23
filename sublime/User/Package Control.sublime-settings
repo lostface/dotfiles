@@ -5,22 +5,11 @@
 	],
 	"installed_packages":
 	[
-		"AdvancedNewFile",
-		"Babel",
-		"Babel Snippets",
 		"Color Highlighter",
 		"Colorsublime",
 		"Dayle Rees Color Schemes",
-		"Emmet",
-		"ESLint-Formatter",
-		"JavaScript & NodeJS Snippets",
 		"Monokai Extended",
 		"Package Control",
-		"Placeholders",
-		"SideBarEnhancements",
-		"SublimeCodeIntel",
-		"SublimeLinter",
-		"SublimeLinter-csslint",
-		"SublimeLinter-json"
+		"SideBarEnhancements"
 	]
 }
