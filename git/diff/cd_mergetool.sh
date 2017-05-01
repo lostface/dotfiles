@@ -1,5 +1,5 @@
 MERGE_TOOL=code;
-DIFF_TOOL=C:/dev/tools/diff/KDiff3/kdiff3.exe;
+DIFF_TOOL=kdiff3.exe;
 
 MERGED=$1;
 LOCAL=$2;

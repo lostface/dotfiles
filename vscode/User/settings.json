@@ -93,13 +93,13 @@
   "html.validate.styles": true,
 
   // Enable/disable TypeScript validation.
-  "typescript.validate.enable": true,
+  "typescript.validate.enable": false,
 
   // Enable/disable default TypeScript formatter.
-  "typescript.format.enable": true,
+  "typescript.format.enable": false,
 
   // Enable/disable implementations CodeLens. Requires TypeScript >= 2.2.0.
-  "typescript.implementationsCodeLens.enabled": true,
+  "typescript.implementationsCodeLens.enabled": false,
 
   // Enable/disable JavaScript validation.
   "javascript.validate.enable": true,
@@ -112,7 +112,6 @@
 
   // Automatically update extensions
   "extensions.autoUpdate": true,
-
 
   // Control whether htmlhint is enabled for HTML files or not.
   "htmlhint.enable": true,
@@ -152,5 +151,7 @@
 
   // Enable usage data and errors to be sent to Microsoft.
   "telemetry.enableTelemetry": false,
-  "workbench.iconTheme": "vs-seti"
+  "workbench.iconTheme": "vs-seti",
+  "terminal.integrated.shell.windows": "C:\\Windows\\Sysnative\\WindowsPowerShell\\v1.0\\powershell.exe",
+  "window.zoomLevel": 0
 }

@@ -1,4 +1,4 @@
-MERGE_TOOL=C:/dev/tools/diff/KDiff3/kdiff3.exe;
+MERGE_TOOL=kdiff3.exe;
 
 MERGED=$1;
 LOCAL=$2;
