@@ -47,11 +47,13 @@ alias gsif='git ls-files --other --ignored --exclude-standard';
 alias gsh='git show';
 
 alias gl='git log --pretty=format:"%h | %cd | %s%d [%cn]%n" --date=short';
+alias glo='git log --pretty=format:"%h | %cd | %s%d [%cn]%n" --date=short origin/`git symbolic-ref --short HEAD`';
 alias glm='git log --pretty=format:"%h | %cd | %s%d [%cn]%n" --date=short --merges';
 alias glg='git log --pretty=format:"%h | %cd | %s%d [%cn]%n" --date=short --graph';
 alias gll='git log --pretty=format:"%h | %cd | %s%d [%cn]%n" --date=short -20';
 alias gllm='git log --pretty=format:"%h | %cd | %s%d [%cn]%n" --date=short -20 --merges';
 alias gllg='git log --pretty=format:"%h | %cd | %s%d [%cn]%n" --date=short -20 --graph';
+alias gllo='git log --pretty=format:"%h | %cd | %s%d [%cn]%n" --date=short -20 origin/`git symbolic-ref --short HEAD`';
 alias gld='git log --pretty=format:"%h | %cd [%cn]%n%s%d%n" --date=iso --name-status';
 # alias gl='git log --pretty=format:"%h | %cd | %s%d [%cn]" --date=short';
 # alias glg='git log --pretty=format:"%h | %cd | %s%d [%cn]" --date=short --graph';
