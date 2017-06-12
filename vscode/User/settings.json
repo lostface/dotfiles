@@ -6,11 +6,8 @@
   // The number of spaces a tab is equal to. This setting is overriden based on the file contents when `editor.detectIndentation` is on.
   "editor.tabSize": 2,
 
-  // Controls if the minimap is shown
-  "editor.minimap.enabled": true,
-
   // Controls how lines should wrap. Can be:
-  //  - 'off' (disable wrapping),
+  //  - 'off' (disable wrapping),min
   //  - 'on' (viewport wrapping),
   //  - 'wordWrapColumn' (wrap at `editor.wordWrapColumn`) or
   //  - 'bounded' (wrap at minimum of viewport and `editor.wordWrapColumn`).
@@ -22,15 +19,15 @@
   // Controls if the editor should automatically close brackets after opening them
   "editor.autoClosingBrackets": true,
 
-  // Controls whether the editor should render indent guides
-  "editor.renderIndentGuides": true,
-
   // Controls if suggestions should automatically show up while typing
   "editor.quickSuggestions": {
     "other": true,
     "comments": true,
     "strings": true
   },
+
+  // Try out the new emmet modules (which will eventually replace the old single emmet library) for all emmet features.
+  "emmet.useNewEmmet": true,
 
   // Controls the position of the editor's tabs close buttons or disables them when set to 'off'.
   "workbench.editor.tabCloseButton": "right",
@@ -110,9 +107,6 @@
   // Enable/disable built-in PHP validation.
   "php.validate.enable": false,
 
-  // Automatically update extensions
-  "extensions.autoUpdate": true,
-
   // Control whether htmlhint is enabled for HTML files or not.
   "htmlhint.enable": true,
 
@@ -151,7 +145,6 @@
 
   // Enable usage data and errors to be sent to Microsoft.
   "telemetry.enableTelemetry": false,
-  "workbench.iconTheme": "vs-seti",
   "terminal.integrated.shell.windows": "C:\\Windows\\Sysnative\\WindowsPowerShell\\v1.0\\powershell.exe",
   "window.zoomLevel": 0
 }
