@@ -26,6 +26,9 @@
     "strings": true
   },
 
+  // Controls if the editor should automatically adjust the indentation when users type, paste or move lines. Indentation rules of the language must be available.
+  "editor.autoIndent": true,
+
   // Try out the new emmet modules (which will eventually replace the old single emmet library) for all emmet features.
   "emmet.useNewEmmet": true,
 
