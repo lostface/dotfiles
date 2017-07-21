@@ -167,6 +167,11 @@
   "gitProjectManager.recentProjectsListSize": 7,
 
 
+  // Enables logging of the TS server to a file. This log can be used to diagnose TS Server issues. The log may contain file paths, source code, and other potentially sensitive information from your project.
+  "typescript.tsserver.log": "off",
+
   "window.zoomLevel": 0,
   "terminal.integrated.shell.windows": "C:\\Windows\\Sysnative\\WindowsPowerShell\\v1.0\\powershell.exe"
+  // Configure whether you receive automatic updates from an update channel. Requires a restart after change.
+  // "update.channel": "none"
 }
