@@ -56,6 +56,19 @@
   // Controls the dimensions of opening a new window. By default, a new window will open in the center of the screen with small dimensions. When set to  'inherit', the window will get the same dimensions as the last active one. When set to 'maximized', the window will open maximized and fullscreen if configured to 'fullscreen'.
   "window.newWindowDimensions": "inherit",
 
+  // Controls the window title based on the active editor. Variables are substituted based on the context:
+  // ${activeEditorShort}: e.g. myFile.txt
+  // ${activeEditorMedium}: e.g. myFolder/myFile.txt
+  // ${activeEditorLong}: e.g. /Users/Development/myProject/myFolder/myFile.txt
+  // ${folderName}: e.g. myFolder
+  // ${folderPath}: e.g. /Users/Development/myFolder
+  // ${rootName}: e.g. myFolder1, myFolder2, myFolder3
+  // ${rootPath}: e.g. /Users/Development/myWorkspace
+  // ${appName}: e.g. VS Code
+  // ${dirty}: a dirty indicator if the active editor is dirty
+  // ${separator}: a conditional separator (" - ") that only shows when surrounded by variables with values
+  "window.title": "${dirty}${activeEditorMedium}${separator}${folderName}${separator}${appName}",
+
 
 
   // When enabled, will trim trailing whitespace when saving a file.
