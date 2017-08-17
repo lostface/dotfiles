@@ -23,16 +23,13 @@
   // Controls if the editor should automatically close brackets after opening them
   "editor.autoClosingBrackets": true,
 
-  // Controls if the editor should automatically adjust the indentation when users type, paste or move lines. Indentation rules of the language must be available.
-  "editor.autoIndent": true,
-
   // Controls whether the minimap slider is automatically hidden.
   "editor.minimap.showSlider": "mouseover",
 
 
 
-    // Try out the new emmet modules (which will eventually replace the old single emmet library) for all emmet features.
-  "emmet.useNewEmmet": true,
+  // When enabled, emmet abbreviations are expanded when pressing TAB.
+  "emmet.triggerExpansionOnTab": false,
 
 
 
