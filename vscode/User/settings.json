@@ -159,6 +159,11 @@
   // For import command. The declaration type used for require()
   "npm-intellisense.importDeclarationType": "let",
 
+
+  // Ignore whitespace changes when blaming (-w flag)
+  "gitblame.ignoreWhitespace": true,
+
+
   // Specifies folders to be ignored. (node_modules for example), improving search performance
   "gitProjectManager.ignoredFolders": ["node_modules"],
 
