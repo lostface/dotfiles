@@ -21,6 +21,9 @@ alias grba='git rebase --abort';
 alias grbq='git rebase --quit';
 
 alias gcp='git cherry-pick';
+alias gcpa='git cherry-pick --abort';
+alias gcpc='git cherry-pick --continue';
+alias gcpq='git cherry-pick --quit';
 
 alias gm='git merge --no-ff';
 alias gma='git merge --abort';
