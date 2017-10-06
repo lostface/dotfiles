@@ -159,7 +159,6 @@
   // For import command. The declaration type used for require()
   "npm-intellisense.importDeclarationType": "let",
 
-
   // Ignore whitespace changes when blaming (-w flag)
   "gitblame.ignoreWhitespace": true,
 
@@ -186,7 +185,8 @@
   "typescript.tsserver.log": "off",
 
   "window.zoomLevel": 0,
-  "terminal.integrated.shell.windows": "C:\\Windows\\Sysnative\\WindowsPowerShell\\v1.0\\powershell.exe"
+  "terminal.integrated.shell.windows": "C:\\Windows\\Sysnative\\WindowsPowerShell\\v1.0\\powershell.exe",
+  "workbench.colorTheme": "Ayu Mirage"
   // Configure whether you receive automatic updates from an update channel. Requires a restart after change.
   // "update.channel": "none"
 }

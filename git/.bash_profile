@@ -48,6 +48,7 @@ alias gs='git status';
 alias gsi='git status --ignored';
 alias gsif='git ls-files --other --ignored --exclude-standard';
 alias gsh='git show';
+alias gp='git push';
 
 alias gl='git log --pretty=format:"%h | %cd | %s%d [%cn]%n" --date=short';
 alias glo='git log --pretty=format:"%h | %cd | %s%d [%cn]%n" --date=short origin/`git symbolic-ref --short HEAD`';
