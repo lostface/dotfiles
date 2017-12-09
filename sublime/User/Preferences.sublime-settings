@@ -19,7 +19,7 @@
 		"*.jar",
 		"*.zip"
 	],
-	"color_scheme": "Packages/User/SublimeLinter/Monokai Extended (SL).tmTheme",
+	"color_scheme": "Packages/User/Color Highlighter/themes/Monokai Extended (SL).tmTheme",
 	"ensure_newline_at_eof_on_save": true,
 	"file_exclude_patterns":
 	[

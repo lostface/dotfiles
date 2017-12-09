@@ -26,12 +26,6 @@
     "strings": true
   },
 
-  // Controls if the editor should automatically adjust the indentation when users type, paste or move lines. Indentation rules of the language must be available.
-  "editor.autoIndent": true,
-
-  // Try out the new emmet modules (which will eventually replace the old single emmet library) for all emmet features.
-  "emmet.useNewEmmet": true,
-
   // Controls the position of the editor's tabs close buttons or disables them when set to 'off'.
   "workbench.editor.tabCloseButton": "right",
 
@@ -135,8 +129,25 @@
   // Controls whether eslint is enabled for JavaScript files or not.
   "eslint.enable": false,
 
+  // Fit code within this line limit
+  "prettier.printWidth": 80,
+
+  // If true, will use single instead of double quotes
+  "prettier.singleQuote": true,
+
+  // Controls the printing of trailing commas wherever possible
+  "prettier.trailingComma": "all",
+
+  // Whether to add a semicolon at the end of every line
+  "prettier.semi": false,
+
   // For import command. The declaration type used for require()
   "npm-intellisense.importDeclarationType": "let",
+
+
+  // Ignore whitespace changes when blaming (-w flag)
+  "gitblame.ignoreWhitespace": true,
+
 
   // Specifies folders to be ignored. (node_modules for example), improving search performance
   "gitProjectManager.ignoredFolders": ["node_modules"],
@@ -163,5 +174,5 @@
   "telemetry.enableTelemetry": false,
   "terminal.integrated.shell.windows": "C:\\Windows\\Sysnative\\WindowsPowerShell\\v1.0\\powershell.exe",
   "window.zoomLevel": 0,
-  "workbench.colorTheme": "Default Light+"
+  "workbench.colorTheme": "Ayu Mirage"
 }
