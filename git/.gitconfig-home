@@ -39,3 +39,6 @@
 [alias]
     ch = checkout
     br = branch
+[rerere]
+	enabled = true
+	autoupdate = true
