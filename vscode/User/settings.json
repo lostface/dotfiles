@@ -26,6 +26,9 @@
   // Controls whether the minimap slider is automatically hidden.
   "editor.minimap.showSlider": "mouseover",
 
+  // Controls if file decorations should use colors.
+  "explorer.decorations.colors": true,
+
 
 
   // When enabled, emmet abbreviations are expanded when pressing TAB.
@@ -47,6 +50,13 @@
 
   // Controls if editors showing a file should close automatically when the file is deleted or renamed by some other process. Disabling this will keep the editor open as dirty on such an event. Note that deleting from within the application will always close the editor and that dirty files will never close to preserve your data.
   "workbench.editor.closeOnFileDelete": false,
+
+  // Controls the format of the label for an editor. Changing this setting can for example make it easier to understand the location of a file:
+  // - short:   'parent'
+  // - medium:  'workspace/src/parent'
+  // - long:    '/home/user/workspace/src/parent'
+  // - default: '.../parent', when another tab shares the same title, or the relative workspace path if tabs are disabled
+  "workbench.editor.labelFormat": "short",
 
 
 
@@ -150,43 +160,31 @@
 
 
 
+  // Specifies the path to the NPM executable used for Automatic Type Acquisition. Requires TypeScript >= 2.3.4.
+  "typescript.npm": "c:/nodejs/npm",
+
   // Control whether htmlhint is enabled for HTML files or not.
   "htmlhint.enable": true,
 
   // Controls whether eslint is enabled for JavaScript files or not.
   "eslint.enable": false,
 
-  // For import command. The declaration type used for require()
-  "npm-intellisense.importDeclarationType": "let",
 
   // Ignore whitespace changes when blaming (-w flag)
   "gitblame.ignoreWhitespace": true,
-
-
-  // Specifies folders to be ignored. (node_modules for example), improving search performance
-  "gitProjectManager.ignoredFolders": ["node_modules"],
-
-  // Specifies the base folders to search for git repositories
-  "gitProjectManager.baseProjectsFolders": [
-    "%USERPROFILE%"
-  ],
-
-  // Specifies whether saves repository folders' data between sessions
-  "gitProjectManager.storeRepositoriesBetweenSessions": false,
-
-  // Indicate the maximum depth of folder recursion to search for projects. Any value below 1 means there is no limit
-  "gitProjectManager.maxDepthRecursion": 3,
-
-  // Number of recent projects to be kept to use with GPM - Open Recent
-  "gitProjectManager.recentProjectsListSize": 7,
 
 
   // Enables logging of the TS server to a file. This log can be used to diagnose TS Server issues. The log may contain file paths, source code, and other potentially sensitive information from your project.
   "typescript.tsserver.log": "off",
 
   "window.zoomLevel": 0,
-  "terminal.integrated.shell.windows": "C:\\Windows\\Sysnative\\WindowsPowerShell\\v1.0\\powershell.exe",
-  "workbench.colorTheme": "Ayu Mirage"
+  "workbench.panel.location": "bottom",
+  "workbench.colorTheme": "Ayu Mirage",
+  "cSpell.userWords": [
+    "Irén",
+    "Lovász",
+    "Schengen"
+  ]
   // Configure whether you receive automatic updates from an update channel. Requires a restart after change.
   // "update.channel": "none"
 }

@@ -42,6 +42,7 @@ alias gds='git diff --staged';
 alias gch='git checkout';
 alias gchm='git checkout master';
 alias gchd='git checkout development';
+alias gchp='git checkout -p';
 alias gci='git commit -m ';
 alias gcia='git commit --amend';
 alias gs='git status';
@@ -100,3 +101,8 @@ alias gwt='git worktree';
 alias gwta='git worktree add';
 alias gwtl='git worktree list';
 alias gwtp='git worktree prune';
+
+alias grr='git rerere';
+alias grrd='git rerere diff';
+alias grrs='git rerere status';
+alias grrr='git rerere remaining';

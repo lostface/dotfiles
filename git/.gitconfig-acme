@@ -4,7 +4,7 @@
     ui = auto
 [user]
     name = Zoltan Feher
-    email = z.feher@mito.hu
+	email = z.feher@mito.hu
 [push]
     default = simple
 [pull]
@@ -39,3 +39,5 @@
 [alias]
     ch = checkout
     br = branch
+[winUpdater]
+	recentlySeenVersion = 2.15.1.windows.2
