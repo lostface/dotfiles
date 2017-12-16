@@ -21,6 +21,9 @@ alias grba='git rebase --abort';
 alias grbq='git rebase --quit';
 
 alias gcp='git cherry-pick';
+alias gcpa='git cherry-pick --abort';
+alias gcpc='git cherry-pick --continue';
+alias gcpq='git cherry-pick --quit';
 
 alias gm='git merge --no-ff';
 alias gma='git merge --abort';
@@ -45,18 +48,21 @@ alias gs='git status';
 alias gsi='git status --ignored';
 alias gsif='git ls-files --other --ignored --exclude-standard';
 alias gsh='git show';
+alias gp='git push';
 
 alias gl='git log --pretty=format:"%h | %cd | %s%d [%cn]%n" --date=short';
+alias glo='git log --pretty=format:"%h | %cd | %s%d [%cn]%n" --date=short origin/`git symbolic-ref --short HEAD`';
 alias glm='git log --pretty=format:"%h | %cd | %s%d [%cn]%n" --date=short --merges';
 alias glg='git log --pretty=format:"%h | %cd | %s%d [%cn]%n" --date=short --graph';
-alias gll='git log --pretty=format:"%h | %cd | %s%d [%cn]%n" --date=short -20';
-alias gllm='git log --pretty=format:"%h | %cd | %s%d [%cn]%n" --date=short -20 --merges';
-alias gllg='git log --pretty=format:"%h | %cd | %s%d [%cn]%n" --date=short -20 --graph';
+alias gll='git log --pretty=format:"%h | %cd | %s%d [%cn]%n" --date=short -14';
+alias gllm='git log --pretty=format:"%h | %cd | %s%d [%cn]%n" --date=short -14 --merges';
+alias gllg='git log --pretty=format:"%h | %cd | %s%d [%cn]%n" --date=short -14 --graph';
+alias gllo='git log --pretty=format:"%h | %cd | %s%d [%cn]%n" --date=short -14 origin/`git symbolic-ref --short HEAD`';
 alias gld='git log --pretty=format:"%h | %cd [%cn]%n%s%d%n" --date=iso --name-status';
 # alias gl='git log --pretty=format:"%h | %cd | %s%d [%cn]" --date=short';
 # alias glg='git log --pretty=format:"%h | %cd | %s%d [%cn]" --date=short --graph';
-# alias gll='git log --pretty=format:"%h | %cd | %s%d [%cn]" --date=short -20';
-# alias gllg='git log --pretty=format:"%h | %cd | %s%d [%cn]" --date=short -20 --graph';
+# alias gll='git log --pretty=format:"%h | %cd | %s%d [%cn]" --date=short -14';
+# alias gllg='git log --pretty=format:"%h | %cd | %s%d [%cn]" --date=short -14 --graph';
 # alias gld='git log --pretty=format:"%h | %cd [%cn]%n%s%d%n" --date=iso --name-status';
 
 alias ga='git add -i';
@@ -76,9 +82,9 @@ alias gbr='git branch';
 alias gbrt='git branch -v';
 alias gmt='git mergetool';
 alias gdt='git difftool';
-alias gdto='git difftool head origin/`git symbolic-ref --short HEAD`';
-alias gdtd='git difftool origin/development head';
-alias gdtm='git difftool origin/master head';
+alias gdto='git difftool HEAD origin/`git symbolic-ref --short HEAD`';
+alias gdtd='git difftool origin/development HEAD';
+alias gdtm='git difftool origin/master HEAD';
 alias grf='git reflog';
 
 alias gbs='git bisect';

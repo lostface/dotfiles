@@ -41,4 +41,4 @@
     br = branch
 [rerere]
 	enabled = true
-	autoupdate = true
+	autoupdate = false
