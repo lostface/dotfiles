@@ -58,6 +58,9 @@
   // - default: '.../parent', when another tab shares the same title, or the relative workspace path if tabs are disabled
   "workbench.editor.labelFormat": "short",
 
+  // Controls the sizing of editor tabs. Set to 'fit' to keep tabs always large enough to show the full editor label. Set to 'shrink' to allow tabs to get smaller when the available space is not enough to show all tabs at once.
+  "workbench.editor.tabSizing": "shrink",
+
 
 
   // Controls the dimensions of opening a new window. By default, a new window will open in the center of the screen with small dimensions. When set to  'inherit', the window will get the same dimensions as the last active one. When set to 'maximized', the window will open maximized and fullscreen if configured to 'fullscreen'.
