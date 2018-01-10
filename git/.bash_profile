@@ -1,5 +1,5 @@
 # git aliases
-alias gf='git fetch';
+alias gf='git fetch -p';
 
 alias gr='git reset';
 alias grs='git reset --soft';

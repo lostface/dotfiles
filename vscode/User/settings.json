@@ -181,13 +181,13 @@
   "typescript.tsserver.log": "off",
 
   "window.zoomLevel": 0,
-  "workbench.colorTheme": "Ayu Mirage",
   "cSpell.userWords": [
     "Irén",
     "Lovász",
     "Schengen"
   ],
-  "git.autofetch": true
+  "git.autofetch": true,
+  "workbench.colorTheme": "Ayu Mirage",
   // Configure whether you receive automatic updates from an update channel. Requires a restart after change.
   // "update.channel": "none"
 }
