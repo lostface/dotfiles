@@ -1,5 +1,6 @@
 [core]
     autocrlf = input
+	pager = diff-so-fancy.sh | less --tabs=4 -RFX
 [color]
     ui = auto
 [user]
