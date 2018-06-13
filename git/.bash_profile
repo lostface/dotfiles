@@ -37,6 +37,7 @@ alias gmmf='git merge --ff-only origin/master';
 alias gmdf='git merge --ff-only origin/development';
 
 alias gd='git diff';
+alias gdo='git diff HEAD origin/`git symbolic-ref --short HEAD`';
 alias gds='git diff --staged';
 # alias gdc='git diff --cached'; // same as --staged
 alias gch='git checkout';
