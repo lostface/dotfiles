@@ -5,11 +5,13 @@
 	],
 	"installed_packages":
 	[
+		"Clickable URLs",
 		"Color Highlighter",
 		"Colorsublime",
 		"Dayle Rees Color Schemes",
 		"Monokai Extended",
 		"Package Control",
+		"Pretty JSON",
 		"SideBarEnhancements"
 	]
 }
