@@ -18,23 +18,23 @@
     keepBackup = false
     keepTemporaries = false
 [mergetool "diffmerge"]
-    cmd = "C:/dev/dotfiles/git/diff/dm_mergetool.sh" "$MERGED" "$LOCAL" "$BASE" "$REMOTE"
+    cmd = "d:/dev/dotfiles/git/diff/dm_mergetool.sh" "$MERGED" "$LOCAL" "$BASE" "$REMOTE"
     trustExitCode = true
 [mergetool "diffmergeg"]
-    cmd = "C:/dev/dotfiles/git/diff/dmg_mergetool.sh" "$MERGED" "$LOCAL" "$BASE" "$REMOTE"
+    cmd = "d:/dev/dotfiles/git/diff/dmg_mergetool.sh" "$MERGED" "$LOCAL" "$BASE" "$REMOTE"
     trustExitCode = false
 [mergetool "kdiff"]
-    cmd = "C:/dev/dotfiles/git/diff/kd_mergetool.sh" "$MERGED" "$LOCAL" "$BASE" "$REMOTE"
+    cmd = "d:/dev/dotfiles/git/diff/kd_mergetool.sh" "$MERGED" "$LOCAL" "$BASE" "$REMOTE"
     trustExitCode = true
 [mergetool "code"]
-    cmd = "C:/dev/dotfiles/git/diff/cd_mergetool.sh" "$MERGED" "$LOCAL" "$BASE" "$REMOTE"
+    cmd = "d:/dev/dotfiles/git/diff/cd_mergetool.sh" "$MERGED" "$LOCAL" "$BASE" "$REMOTE"
     trustExitCode = false
 [diff]
     tool = kdiff
 [difftool "diffmerge"]
-    cmd = "C:/dev/dotfiles/git/diff/dm_difftool.sh" "$LOCAL" "$REMOTE" "$MERGED"
+    cmd = "d:/dev/dotfiles/git/diff/dm_difftool.sh" "$LOCAL" "$REMOTE" "$MERGED"
 [difftool "kdiff"]
-    cmd = "C:/dev/dotfiles/git/diff/kd_difftool.sh" "$LOCAL" "$REMOTE" "$MERGED"
+    cmd = "d:/dev/dotfiles/git/diff/kd_difftool.sh" "$LOCAL" "$REMOTE" "$MERGED"
 [difftool "code"]
     cmd = "code -n -w -d $LOCAL $REMOTE"
 [alias]
@@ -42,4 +42,8 @@
     br = branch
 [rerere]
 	enabled = true
-	autoupdate = false
+	autoupdate = true
+[winUpdater]
+	recentlySeenVersion = 2.20.1.windows.1
+[credential]
+	helper = wincred

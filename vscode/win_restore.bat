@@ -1,4 +1,4 @@
 REM cd %APPDATA%\Code\
-cd C:\Users\Midnite\AppData\Roaming\Code\
+cd C:\Users\l0stf\AppData\Roaming\Code\
 rmdir /s /q User
-mklink /D User c:\dev\dotfiles\vscode\User
+mklink /D User d:\dev\dotfiles\vscode\User
