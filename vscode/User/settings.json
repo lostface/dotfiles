@@ -1,17 +1,22 @@
 // Place your settings in this file to overwrite the default settings
 {
-  // Columns at which to show vertical rulers
-  "editor.rulers": [80, 120, 160],
+  "editor.rulers": [
+    80,
+    120,
+    160
+  ],
 
-  // The number of spaces a tab is equal to. This setting is overriden based on the file contents when `editor.detectIndentation` is on.
+  // Controls the font family.
+  "editor.fontFamily": "Fira Code",
+
+  // Enables font ligatures
+  "editor.fontLigatures": true,
+
+  // Controls the font size in pixels.
+  "editor.fontSize": 14,
+
+  // The number of spaces a tab is equal to. This setting is overridden based on the file contents when `editor.detectIndentation` is on.
   "editor.tabSize": 2,
-
-  // Controls how lines should wrap. Can be:
-  //  - 'off' (disable wrapping),
-  //  - 'on' (viewport wrapping),
-  //  - 'wordWrapColumn' (wrap at `editor.wordWrapColumn`) or
-  //  -  (wrap at minimum of viewport and `editor.wordWrapColumn`).
-  "editor.wordWrap": "off",
 
   // Controls if suggestions should automatically show up while typing
   "editor.quickSuggestions": {
@@ -20,108 +25,47 @@
     "strings": true
   },
 
-  // Controls if the editor should automatically close brackets after opening them
-  "editor.autoClosingBrackets": true,
+  // Controls if the editor should allow to move selections via drag and drop.
+  "editor.dragAndDrop": false,
 
-  // Controls whether the minimap slider is automatically hidden.
-  "editor.minimap.showSlider": "mouseover",
+  // Controls if the editor will scroll using an animation
+  "editor.smoothScrolling": true,
 
-  // Controls if file decorations should use colors.
-  "explorer.decorations.colors": true,
+  // Code action kinds to be run on save.
+  "editor.codeActionsOnSave": {
+    "source.organizeImports": false
+  },
 
+  // Timeout for code actions run on save.
+  "editor.codeActionsOnSaveTimeout": 3000,
+  
+  // Format on save timeout. Specifies a time limit in milliseconds for formatOnSave-commands. Commands taking longer than the specified timeout will be cancelled.
+  "editor.formatOnSaveTimeout": 3000,
 
-
-  // When enabled, emmet abbreviations are expanded when pressing TAB.
-  "emmet.triggerExpansionOnTab": false,
-
-
-
-  // Controls if opened editors from Quick Open show as preview. Preview editors are reused until they are kept (e.g. via double click or editing).
-  "workbench.editor.enablePreviewFromQuickOpen": false,
-
-  // Controls where editors open. Select 'left' or 'right' to open editors to the left or right of the current active one. Select 'first' or 'last' to open editors independently from the currently active one.
-  "workbench.editor.openPositioning": "right",
-
-  // Controls if an editor is revealed in any of the visible groups if opened. If disabled, an editor will prefer to open in the currently active editor group. If enabled, an already opened editor will be revealed instead of opened again in the currently active editor group. Note that there are some cases where this setting is ignored, e.g. when forcing an editor to open in a specific group or to the side of the currently active group.
-  "workbench.editor.revealIfOpen": true,
-
-  // Controls if Quick Open should close automatically once it loses focus.
-  "workbench.quickOpen.closeOnFocusLost": false,
-
-  // Controls if editors showing a file should close automatically when the file is deleted or renamed by some other process. Disabling this will keep the editor open as dirty on such an event. Note that deleting from within the application will always close the editor and that dirty files will never close to preserve your data.
-  "workbench.editor.closeOnFileDelete": false,
-
-  // Controls the format of the label for an editor. Changing this setting can for example make it easier to understand the location of a file:
-  // - short:   'parent'
-  // - medium:  'workspace/src/parent'
-  // - long:    '/home/user/workspace/src/parent'
-  // - default: '.../parent', when another tab shares the same title, or the relative workspace path if tabs are disabled
-  "workbench.editor.labelFormat": "short",
-
-  // Controls the sizing of editor tabs. Set to 'fit' to keep tabs always large enough to show the full editor label. Set to 'shrink' to allow tabs to get smaller when the available space is not enough to show all tabs at once.
-  "workbench.editor.tabSizing": "shrink",
+  
+  // Controls whether and how symbols are shown in the breadcrumbs view.
+  //  - on: Show all symbols in the breadcrumbs view.
+  //  - off: Do not show symbols in the breadcrumbs view.
+  //  - last: Only show the current symbol in the breadcrumbs view.
+  "breadcrumbs.symbolPath": "off",
 
 
-
-  // Controls the dimensions of opening a new window. By default, a new window will open in the center of the screen with small dimensions. When set to  'inherit', the window will get the same dimensions as the last active one. When set to 'maximized', the window will open maximized and fullscreen if configured to 'fullscreen'.
-  "window.newWindowDimensions": "inherit",
-
-  // Controls the window title based on the active editor. Variables are substituted based on the context:
-  // ${activeEditorShort}: e.g. myFile.txt
-  // ${activeEditorMedium}: e.g. myFolder/myFile.txt
-  // ${activeEditorLong}: e.g. /Users/Development/myProject/myFolder/myFile.txt
-  // ${folderName}: e.g. myFolder
-  // ${folderPath}: e.g. /Users/Development/myFolder
-  // ${rootName}: e.g. myFolder1, myFolder2, myFolder3
-  // ${rootPath}: e.g. /Users/Development/myWorkspace
-  // ${appName}: e.g. VS Code
-  // ${dirty}: a dirty indicator if the active editor is dirty
-  // ${separator}: a conditional separator (" - ") that only shows when surrounded by variables with values
-  "window.title": "${dirty}${activeEditorMedium}${separator}${folderName}${separator}${appName}",
-
-
-
-  // When enabled, will trim trailing whitespace when saving a file.
-  "files.trimTrailingWhitespace": true,
+  // Controls auto save of dirty files. Accepted values:  'off', 'afterDelay', 'onFocusChange' (editor loses focus), 'onWindowChange' (window loses focus). If set to 'afterDelay', you can configure the delay in 'files.autoSaveDelay'.
+  "files.autoSave": "onFocusChange",
 
   // When enabled, insert a final new line at the end of the file when saving it.
   "files.insertFinalNewline": true,
 
-  // Controls auto save of dirty files. Accepted values:  "off", "afterDelay", "onFocusChange" (editor loses focus), "onWindowChange" (window loses focus). If set to "afterDelay", you can configure the delay in "files.autoSaveDelay".
-  "files.autoSave": "onFocusChange",
-
-  // Controls the delay in ms after which a dirty file is saved automatically. Only applies when 'files.autoSave' is set to 'afterDelay'
-  "files.autoSaveDelay": 1000,
+  // When enabled, will trim all new lines after the final new line at the end of the file when saving it.
+  "files.trimFinalNewlines": true,
 
 
-
-  // Number of editors shown in the Open Editors pane. Set it to 0 to hide the pane.
-  "explorer.openEditors.visible": 0,
-
-  // Controls if the explorer should automatically reveal and select files when opening them.
-  "explorer.autoReveal": true,
+  // Searches case-insensitively if the pattern is all lowercase, otherwise, searches case-sensitively
+  "search.smartCase": true,
 
 
-
-  // Controls CSS validation and problem severities.
-  // Enables or disables all validations
-  "css.validate": true,
-
-  // Controls SCSS validation and problem severities.
-  // Enables or disables all validations
-  "scss.validate": true,
-
-  // Controls LESS validation and problem severities.
-  // Enables or disables all validations
-  "less.validate": true,
-
-
-
-  // Enable/disable default HTML formatter (requires restart)
-  "html.format.enable": true,
-
-  // Maximum amount of characters per line (0 = disable).
-  "html.format.wrapLineLength": 160,
+  // End with a newline.
+  "html.format.endWithNewline": true,
 
   // Configures if the built-in HTML language support suggests Angular V1 tags and properties.
   "html.suggest.angular1": false,
@@ -129,65 +73,116 @@
   // Configures if the built-in HTML language support suggests Ionic tags, properties and values.
   "html.suggest.ionic": false,
 
-  // Configures if the built-in HTML language support validates embedded scripts.
-  "html.validate.scripts": true,
 
-  // Configures if the built-in HTML language support validates embedded styles.
-  "html.validate.styles": true,
+  // Enable/disable semantic checking of JavaScript files. Existing jsconfig.json or tsconfig.json files override this setting. Requires TypeScript >=2.3.1.
+  "javascript.implicitProjectConfig.checkJs": true,
 
 
-
-  // Enable/disable TypeScript validation.
-  "typescript.validate.enable": true,
-
-  // Enable/disable default TypeScript formatter.
-  "typescript.format.enable": true,
-
-  // Enable/disable JavaScript validation.
-  "javascript.validate.enable": true,
-
-  // Enable/disable default JavaScript formatter.
-  "javascript.format.enable": true,
-
-  // Enable/disable built-in PHP validation.
-  "php.validate.enable": false,
+  // Enable an explorer view for npm scripts.
+  "npm.enableScriptExplorer": false,
 
 
-
-  // Enable crash reports to be sent to Microsoft.
-  // This option requires restart to take effect.
   "telemetry.enableCrashReporter": false,
-
-  // Enable usage data and errors to be sent to Microsoft.
   "telemetry.enableTelemetry": false,
 
 
+  // When set, text selected in the terminal will be copied to the clipboard.
+  "terminal.integrated.copyOnSelection": true,
 
-  // Specifies the path to the NPM executable used for Automatic Type Acquisition. Requires TypeScript >= 2.3.4.
-  "typescript.npm": "c:/nodejs/npm",
+  // Controls whether the terminal cursor blinks.
+  "terminal.integrated.cursorBlinking": true,
 
-  // Control whether htmlhint is enabled for HTML files or not.
-  "htmlhint.enable": true,
+  // Controls the style of terminal cursor.
+  "terminal.integrated.cursorStyle": "line",
 
-  // Controls whether eslint is enabled for JavaScript files or not.
-  "eslint.enable": false,
+  "terminal.integrated.shell.windows": "C:\\Program Files\\Git\\bin\\bash.exe",
 
+  // The command line arguments to use when on the Windows terminal.
+  "terminal.integrated.shellArgs.windows": ["-l"],
 
-  // Ignore whitespace changes when blaming (-w flag)
-  "gitblame.ignoreWhitespace": true,
+  "terminal.integrated.scrollback": 9999,
 
+  // Enables Windows background updates.
+  "update.enableWindowsBackgroundUpdates": false,
 
-  // Enables logging of the TS server to a file. This log can be used to diagnose TS Server issues. The log may contain file paths, source code, and other potentially sensitive information from your project.
-  "typescript.tsserver.log": "off",
+  // Controls the dimensions of opening a new window when at least one window is already opened. By default, a new window will open in the center of the screen with small dimensions. When set to 'inherit', the window will get the same dimensions as the last window that was active. When set to 'maximized', the window will open maximized and fullscreen if configured to 'fullscreen'. Note that this setting does not have an impact on the first window that is opened. The first window will always restore the size and location as you left it before closing.
+  "window.newWindowDimensions": "inherit",
 
-  "window.zoomLevel": 0,
-  "cSpell.userWords": [
-    "Irén",
-    "Lovász",
-    "Schengen"
+    // Controls the window title based on the active editor. Variables are substituted based on the context:
+  // ${activeEditorShort}: the file name (e.g. myFile.txt)
+  // ${activeEditorMedium}: the path of the file relative to the workspace folder (e.g. myFolder/myFile.txt)
+  // ${activeEditorLong}: the full path of the file (e.g. /Users/Development/myProject/myFolder/myFile.txt)
+  // ${folderName}: name of the workspace folder the file is contained in (e.g. myFolder)
+  // ${folderPath}: file path of the workspace folder the file is contained in (e.g. /Users/Development/myFolder)
+  // ${rootName}: name of the workspace (e.g. myFolder or myWorkspace)
+  // ${rootPath}: file path of the workspace (e.g. /Users/Development/myWorkspace)
+  // ${appName}: e.g. VS Code
+  // ${dirty}: a dirty indicator if the active editor is dirty
+  // ${separator}: a conditional separator (" - ") that only shows when surrounded by variables with values
+  "window.title": "${dirty}${activeEditorMedium}${separator}${rootName}${separator}${appName}",
+
+  // Controls if opened editors should show in tabs or not.
+  "workbench.editor.showTabs": false,
+
+  // Controls which editor is shown at startup, if none is restored from the previous session. Select 'none' to start without an editor, 'welcomePage' to open the Welcome page (default), 'newUntitledFile' to open a new untitled file (only opening an empty workspace).
+  "workbench.startupEditor": "none",
+
+  "gitlens.recentChanges.highlight.locations": [
+    "overview",
+    "line",
+    "gutter"
   ],
-  "git.autofetch": true,
-  "workbench.colorTheme": "Ayu Mirage",
-  // Configure whether you receive automatic updates from an update channel. Requires a restart after change.
-  // "update.channel": "none"
+  "gitlens.currentLine.format": "${id} ${authorAgoOrDate} • ${message}",
+  "gitlens.statusBar.format": "${id} ${authorAgoOrDate}",
+  "gitlens.hovers.currentLine.over": "line",
+  "gitlens.currentLine.enabled": false,
+  "gitlens.codeLens.enabled": false,
+  "gitlens.advanced.messages": {
+    "suppressCommitHasNoPreviousCommitWarning": false,
+    "suppressCommitNotFoundWarning": false,
+    "suppressFileNotUnderSourceControlWarning": false,
+    "suppressGitVersionWarning": false,
+    "suppressLineUncommittedWarning": false,
+    "suppressNoRepositoryWarning": false,
+    "suppressResultsExplorerNotice": false,
+    "suppressShowKeyBindingsNotice": true
+  },
+  "gitlens.advanced.telemetry.enabled": false,
+
+  "sync.gist": "4c333bfdf374e853c8f610e8d9634c19",
+  "sync.autoDownload": false,
+  "sync.autoUpload": false,
+  "sync.quietSync": false,
+  "sync.askGistName": false,
+  "diffEditor.ignoreTrimWhitespace": true,
+  "sync.removeExtensions": true,
+  "sync.syncExtensions": true,
+  "breadcrumbs.enabled": true,
+  "window.menuBarVisibility": "toggle",
+  "workbench.editor.enablePreviewFromQuickOpen": false,
+  "editor.suggest.localityBonus": true,
+  "git.rebaseWhenSync": true,
+  "sync.forceDownload": false,
+  "cSpell.userWords": [
+    "extralight",
+    "massoc"
+  ],
+  "workbench.colorTheme": "Solarized Dark",
+  "search.usePCRE2": true,
+  "search.showLineNumbers": true,
+  "workbench.editor.highlightModifiedTabs": true,
+  "gitlens.views.fileHistory.enabled": true,
+  "gitlens.views.lineHistory.enabled": true,
+  "jsDocCompletion.enabled": false,
+  /*
+  // Controls if opened editors from Quick Open show as preview. Preview editors are reused until they are kept (e.g. via double click or editing).
+  "workbench.editor.enablePreviewFromQuickOpen": false,
+
+  // Controls if an editor is revealed in any of the visible groups if opened. If disabled, an editor will prefer to open in the currently active editor group. If enabled, an already opened editor will be revealed instead of opened again in the currently active editor group. Note that there are some cases where this setting is ignored, e.g. when forcing an editor to open in a specific group or to the side of the currently active group.
+  "workbench.editor.revealIfOpen": true,
+
+  // Controls if Quick Open should close automatically once it loses focus.
+  "workbench.quickOpen.closeOnFocusLost": false,
+
+  */
 }

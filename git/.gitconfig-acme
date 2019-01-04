@@ -1,47 +1,66 @@
 [core]
     autocrlf = input
 	pager = diff-so-fancy.sh | less --tabs=4 -RFX
+
 [color]
     ui = auto
+
 [user]
     name = Zoltan Feher
 	email = z.feher@mito.hu
+    
 [push]
     default = simple
+
 [pull]
 	rebase = preserve
+
 [merge]
     conflictStyle = diff3
     tool = code
+
 [mergetool]
     prompt = true
-    keepBackup = false
+	keepBackup = false
     keepTemporaries = false
-[mergetool "diffmerge"]
-    cmd = "c:/Users/zfeher/dotfiles/git/diff/dm_mergetool.sh" "$MERGED" "$LOCAL" "$BASE" "$REMOTE"
-    trustExitCode = true
-[mergetool "diffmergeg"]
-    cmd = "c:/Users/zfeher/dotfiles/git/diff/dmg_mergetool.sh" "$MERGED" "$LOCAL" "$BASE" "$REMOTE"
-    trustExitCode = false
-[mergetool "kdiff"]
-    cmd = "c:/Users/zfeher/dotfiles/git/diff/kd_mergetool.sh" "$MERGED" "$LOCAL" "$BASE" "$REMOTE"
-    trustExitCode = true
+
 [mergetool "code"]
     cmd = "c:/Users/zfeher/dotfiles/git/diff/cd_mergetool.sh" "$MERGED" "$LOCAL" "$BASE" "$REMOTE"
     trustExitCode = false
+
+[mergetool "kdiff"]
+    cmd = "c:/Users/zfeher/dotfiles/git/diff/kd_mergetool.sh" "$MERGED" "$LOCAL" "$BASE" "$REMOTE"
+    trustExitCode = true
+
+[mergetool "diffmerge"]
+    cmd = "c:/Users/zfeher/dotfiles/git/diff/dm_mergetool.sh" "$MERGED" "$LOCAL" "$BASE" "$REMOTE"
+    trustExitCode = true
+
 [diff]
-    tool = kdiff
-[difftool "diffmerge"]
-    cmd = "c:/Users/zfeher/dotfiles/git/diff/dm_difftool.sh" "$LOCAL" "$REMOTE" "$MERGED"
+    tool = p4merge
+
+[difftool "p4merge"]
+    cmd = "c:/Users/zfeher/dotfiles/git/diff/p4_difftool.sh" "$LOCAL" "$REMOTE" "$MERGED"
+
 [difftool "kdiff"]
     cmd = "c:/Users/zfeher/dotfiles/git/diff/kd_difftool.sh" "$LOCAL" "$REMOTE" "$MERGED"
+
+[difftool "diffmerge"]
+    cmd = "c:/Users/zfeher/dotfiles/git/diff/dm_difftool.sh" "$LOCAL" "$REMOTE" "$MERGED"
+
 [difftool "code"]
     cmd = "code -n -w -d $LOCAL $REMOTE"
+
 [alias]
     ch = checkout
     br = branch
+
 [winUpdater]
-	recentlySeenVersion = 2.17.1.windows.2
+	recentlySeenVersion = 2.20.1.windows.1
+
 [rerere]
 	enabled = true
 	autoupdate = true
+
+[credential]
+	helper = wincred
