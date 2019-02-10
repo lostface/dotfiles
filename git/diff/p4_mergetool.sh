@@ -1,4 +1,4 @@
-MERGE_TOOL=C:/dev/tools/diff/Perforce/p4merge.exe;
+MERGE_TOOL=p4merge.exe;
 
 MERGED=$1;
 LOCAL=$2;

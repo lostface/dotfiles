@@ -1,49 +1,68 @@
 [core]
     autocrlf = input
 	pager = diff-so-fancy.sh | less --tabs=4 -RFX
+
 [color]
     ui = auto
+
 [user]
     name = Zoltan Feher
-    email = zf_common@outlook.com
+	email = zf_common@outlook.com
+    
 [push]
     default = simple
+
 [pull]
-    rebase = preserve
+	rebase = preserve
+
 [merge]
     conflictStyle = diff3
     tool = code
+
 [mergetool]
     prompt = true
-    keepBackup = false
+	keepBackup = false
     keepTemporaries = false
-[mergetool "diffmerge"]
-    cmd = "d:/dev/dotfiles/git/diff/dm_mergetool.sh" "$MERGED" "$LOCAL" "$BASE" "$REMOTE"
-    trustExitCode = true
-[mergetool "diffmergeg"]
-    cmd = "d:/dev/dotfiles/git/diff/dmg_mergetool.sh" "$MERGED" "$LOCAL" "$BASE" "$REMOTE"
+
+[mergetool "code"]
+    cmd = "d:/dev/dotfiles/git/diff/cd_mergetool.sh" "$MERGED" "$LOCAL" "$BASE" "$REMOTE"
+
+
     trustExitCode = false
+
 [mergetool "kdiff"]
     cmd = "d:/dev/dotfiles/git/diff/kd_mergetool.sh" "$MERGED" "$LOCAL" "$BASE" "$REMOTE"
     trustExitCode = true
-[mergetool "code"]
-    cmd = "d:/dev/dotfiles/git/diff/cd_mergetool.sh" "$MERGED" "$LOCAL" "$BASE" "$REMOTE"
-    trustExitCode = false
+
+[mergetool "diffmerge"]
+    cmd = "d:/dev/dotfiles/git/diff/dm_mergetool.sh" "$MERGED" "$LOCAL" "$BASE" "$REMOTE"
+    trustExitCode = true
+
 [diff]
-    tool = kdiff
-[difftool "diffmerge"]
-    cmd = "d:/dev/dotfiles/git/diff/dm_difftool.sh" "$LOCAL" "$REMOTE" "$MERGED"
+    tool = p4merge
+
+[difftool "p4merge"]
+    cmd = "d:/dev/dotfiles/git/diff/p4_difftool.sh" "$LOCAL" "$REMOTE" "$MERGED"
+
 [difftool "kdiff"]
     cmd = "d:/dev/dotfiles/git/diff/kd_difftool.sh" "$LOCAL" "$REMOTE" "$MERGED"
+
+[difftool "diffmerge"]
+    cmd = "d:/dev/dotfiles/git/diff/dm_difftool.sh" "$LOCAL" "$REMOTE" "$MERGED"
+
 [difftool "code"]
     cmd = "code -n -w -d $LOCAL $REMOTE"
+
 [alias]
     ch = checkout
     br = branch
+
+[winUpdater]
+	recentlySeenVersion = 2.20.1.windows.1
+
 [rerere]
 	enabled = true
 	autoupdate = true
-[winUpdater]
-	recentlySeenVersion = 2.20.1.windows.1
+
 [credential]
 	helper = wincred
