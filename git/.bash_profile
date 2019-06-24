@@ -9,12 +9,10 @@ alias gro='git reset --hard origin/`git symbolic-ref --short HEAD`'
 alias grb='git rebase -i --autostash';
 alias grbo='git rebase -i --autostash origin/`git symbolic-ref --short HEAD`';
 alias grbm='git rebase -i --autostash origin/master';
-alias grbd='git rebase -i --autostash origin/development';
 
 alias grbp='git rebase -p --autostash';
 alias grbpo='git rebase -p --autostash origin/`git symbolic-ref --short HEAD`';
 alias grbpm='git rebase -p --autostash origin/master';
-alias grbpd='git rebase -p --autostash origin/development';
 
 alias grbc='git rebase --continue';
 alias grba='git rebase --abort';
@@ -30,11 +28,9 @@ alias gma='git merge --abort';
 alias gmc='git merge --continue';
 alias gmo='git merge --no-ff origin/`git symbolic-ref --short HEAD`';
 alias gmm='git merge --no-ff origin/master';
-alias gmd='git merge --no-ff origin/development';
 alias gmf='git merge --ff-only';
 alias gmof='git merge --ff-only origin/`git symbolic-ref --short HEAD`';
 alias gmmf='git merge --ff-only origin/master';
-alias gmdf='git merge --ff-only origin/development';
 
 alias gd='git diff';
 alias gdo='git diff HEAD origin/`git symbolic-ref --short HEAD`';
@@ -43,9 +39,7 @@ alias gds='git diff --staged';
 # alias gdc='git diff --cached'; // same as --staged
 alias gch='git checkout';
 alias gchm='git checkout master';
-alias gchd='git checkout development';
 alias gchmo='git checkout origin/master';
-alias gchdo='git checkout origin/development';
 alias gchp='git checkout -p';
 alias gcm='git commit';
 alias gcma='git commit --amend';
@@ -88,7 +82,6 @@ alias gbrt='git branch -v';
 alias gmt='git mergetool';
 alias gdt='git difftool';
 alias gdto='git difftool HEAD origin/`git symbolic-ref --short HEAD`';
-alias gdtd='git difftool origin/development HEAD';
 alias gdtm='git difftool origin/master HEAD';
 alias grf='git reflog';
 

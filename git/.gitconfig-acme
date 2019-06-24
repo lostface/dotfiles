@@ -6,7 +6,7 @@
     ui = auto
 
 [user]
-    name = Zoltan Feher
+	name = Zoltan Feher
 	email = z.feher@mito.hu
     
 [push]
@@ -18,6 +18,10 @@
 [merge]
     conflictStyle = diff3
     tool = code
+
+[merge "npm-merge-driver"]
+	name = automatically merge npm lockfiles
+	driver = npx npm-merge-driver merge %A %O %B %P
 
 [mergetool]
     prompt = true
@@ -56,7 +60,7 @@
     br = branch
 
 [winUpdater]
-	recentlySeenVersion = 2.20.1.windows.1
+	recentlySeenVersion = 2.22.0.windows.1
 
 [rerere]
 	enabled = true
