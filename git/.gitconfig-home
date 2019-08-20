@@ -1,6 +1,6 @@
 [core]
     autocrlf = input
-	pager = diff-so-fancy.sh | less --tabs=4 -RFX
+	pager = diff-so-fancy | less --tabs=4 -RFX
 
 [color]
     ui = auto
@@ -58,7 +58,7 @@
     br = branch
 
 [winUpdater]
-	recentlySeenVersion = 2.20.1.windows.1
+	recentlySeenVersion = 2.23.0.windows.1
 
 [rerere]
 	enabled = true
@@ -66,3 +66,7 @@
 
 [credential]
 	helper = wincred
+    
+[merge "npm-merge-driver"]
+	name = automatically merge npm lockfiles
+	driver = npx npm-merge-driver merge %A %O %B %P

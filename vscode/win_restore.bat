@@ -1,4 +1,2 @@
-REM cd %APPDATA%\Code\
-cd C:\Users\l0stf\AppData\Roaming\Code\
-rmdir /s /q User
-mklink /D User d:\dev\dotfiles\vscode\User
+rmdir /s /q "%appdata%\Code\User"
+mklink /j "%appdata%\Code\User" User

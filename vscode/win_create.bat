@@ -1,4 +1,3 @@
-cd %APPDATA%\Code\
-mkdir c:\dev\dotfiles\vscode
-move User c:\dev\dotfiles\vscode\
-mklink /D User c:\dev\dotfiles\vscode\User
+mkdir User
+move "%appdata%\Code\User" .\
+mklink /j "%appdata%\Code\User" User

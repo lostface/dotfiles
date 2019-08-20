@@ -1,4 +1,3 @@
-cd "%APPDATA%\Sublime Text 3\Packages\"
-mkdir c:\dev\dotfiles\sublime
-move User c:\dev\dotfiles\sublime\
-mklink /D User c:\dev\dotfiles\sublime\User
+mkdir User
+move "%appdata%\Sublime Text 3\Packages\User" .\
+mklink /j "%appdata%\Sublime Text 3\Packages\User" User
