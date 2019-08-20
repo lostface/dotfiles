@@ -16,4 +16,6 @@ Package Control.system-ca-bundle
 oscrypto-ca-bundle.crt
 
 # Visual Studio ignores
-workspaceStorage/
+vscode/User/syncLocalSettings.json
+vscode/User/globalStorage/
+vscode/User/workspaceStorage/
