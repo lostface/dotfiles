@@ -9,13 +9,5 @@
     "key": "escape",
     "command": "removeSecondaryCursors",
     "when": "editorHasMultipleSelections && editorTextFocus"
-  },
-  {
-    "key": "unassigned",
-    "command": "git.searchHistory"
-  },
-  {
-    "key": "ctrl+f3",
-    "command": "-git.searchHistory"
-  },
+  }
 ]
