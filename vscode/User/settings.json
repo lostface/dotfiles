@@ -1,15 +1,64 @@
 // Place your settings in this file to overwrite the default settings
 {
-  // "typescript.tsdk": "C:/Users/midnite/AppData/Roaming/npm/node_modules/typescript/lib",
+  // Configure glob patterns for excluding files and folders.
+  "files.exclude": {
+    "**/.git": true,
+    "**/.svn": true,
+    "**/.hg": true,
+    "**/CVS": true,
+    "**/.DS_Store": true,
+    "**/node_modules/": true,
+    ".vscode/": true,
+    ".tmp/": true,
+    "dist/": true
+  },
 
-  // "typescript.tsserver.log": "verbose",
+  // Configure glob patterns of file paths to exclude from file watching. Patterns must match on absolute paths (i.e. prefix with ** or the full path to match properly). Changing this setting requires a restart. When you experience Code consuming lots of cpu time on startup, you can exclude large folders to reduce the initial load.
+  "files.watcherExclude": {
+    "**/.git/objects/**": true,
+    "**/.git/subtree-cache/**": true,
+    "**/node_modules/*/**": true,
+    "**/.tmp/**": true,
+    "**/dist/**": true
+  },
 
-  // Columns at which to show vertical rulers
-  "editor.rulers": [
-    80,
-    120,
-    160
-  ],
+  // Configure glob patterns for excluding files and folders in searches. Inherits all glob patterns from the `files.exclude` setting. Read more about glob patterns [here](https://code.visualstudio.com/docs/editor/codebasics#_advanced-search-options).
+  "search.exclude": {
+    "**/node_modules": true,
+    "**/bower_components": true
+  },
+
+  // Configure file associations to languages (e.g. "*.extension": "html"). These have precedence over the default associations of the languages installed.
+  "files.associations": {
+    "*.env": "properties"
+  },
+
+  "[vue]": {
+    "editor.defaultFormatter": "octref.vetur",
+    "editor.formatOnSave": true
+  },
+
+  "[javascript]": {
+    "editor.formatOnSave": true
+  },
+
+  "[json]": {
+    "editor.formatOnSave": true
+  },
+
+  "[jsonc]": {
+    "editor.formatOnSave": true
+  },
+
+  "[scss]": {
+    "editor.formatOnSave": true
+  },
+
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnPaste": false,
+  "editor.formatOnSave": false,
+  "editor.formatOnType": false,
+  "editor.rulers": [80, 120, 160],
 
   // Controls the font family.
   "editor.fontFamily": "Fira Code",
@@ -22,6 +71,13 @@
 
   // The number of spaces a tab is equal to. This setting is overridden based on the file contents when `editor.detectIndentation` is on.
   "editor.tabSize": 2,
+
+  // Controls how the editor should render whitespace characters.
+  //  - none
+  //  - boundary: Render whitespace characters except for single spaces between words.
+  //  - selection: Render whitespace characters only on selected text.
+  //  - all
+  "editor.renderWhitespace": "selection",
 
   // Controls if suggestions should automatically show up while typing
   "editor.quickSuggestions": {
@@ -38,22 +94,31 @@
 
   // Code action kinds to be run on save.
   "editor.codeActionsOnSave": {
+    "source.fixAll": false,
     "source.organizeImports": false
   },
 
+  "editor.tabCompletion": "on",
+
+  // The modifier to be used to add multiple cursors with the mouse. The Go To Definition and Open Link mouse gestures will adapt such that they do not conflict with the multicursor modifier. [Read more](https://code.visualstudio.com/docs/editor/codebasics#_multicursor-modifier).
+  //  - ctrlCmd: Maps to `Control` on Windows and Linux and to `Command` on macOS.
+  //  - alt: Maps to `Alt` on Windows and Linux and to `Option` on macOS.
+  "editor.multiCursorModifier": "ctrlCmd",
+
   // Timeout for code actions run on save.
   "editor.codeActionsOnSaveTimeout": 3000,
-  
+
   // Format on save timeout. Specifies a time limit in milliseconds for formatOnSave-commands. Commands taking longer than the specified timeout will be cancelled.
   "editor.formatOnSaveTimeout": 3000,
+  "editor.suggest.localityBonus": true,
+  "editor.gotoLocation.multiple": "goto",
+  "breadcrumbs.enabled": true,
 
-  
   // Controls whether and how symbols are shown in the breadcrumbs view.
   //  - on: Show all symbols in the breadcrumbs view.
   //  - off: Do not show symbols in the breadcrumbs view.
   //  - last: Only show the current symbol in the breadcrumbs view.
-  "breadcrumbs.symbolPath": "off",
-
+  "breadcrumbs.symbolPath": "last",
 
   // Controls auto save of dirty files. Accepted values:  'off', 'afterDelay', 'onFocusChange' (editor loses focus), 'onWindowChange' (window loses focus). If set to 'afterDelay', you can configure the delay in 'files.autoSaveDelay'.
   "files.autoSave": "onFocusChange",
@@ -64,26 +129,50 @@
   // When enabled, will trim all new lines after the final new line at the end of the file when saving it.
   "files.trimFinalNewlines": true,
 
-
   // Searches case-insensitively if the pattern is all lowercase, otherwise, searches case-sensitively
   "search.smartCase": true,
+  "search.showLineNumbers": true,
 
+  // Controls where the diff view should be opened when comparing changes in merge conflicts.
+  //  - Current: Open the diff view in the current editor group.
+  //  - Beside: Open the diff view next to the current editor group.
+  //  - Below: Open the diff view below the current editor group.
+  "merge-conflict.diffViewPosition": "Below",
 
   // End with a newline.
   "html.format.endWithNewline": true,
 
+  // Enable/disable default JavaScript formatter.
+  "javascript.format.enable": false,
+
+  // Enable/disable JavaScript validation.
+  "javascript.validate.enable": false,
 
   // Enable/disable semantic checking of JavaScript files. Existing jsconfig.json or tsconfig.json files override this setting. Requires TypeScript >=2.3.1.
   "javascript.implicitProjectConfig.checkJs": true,
 
+  // Enable/disable default TypeScript formatter.
+  "typescript.format.enable": false,
+
+  // Enable/disable TypeScript validation.
+  "typescript.validate.enable": false,
+
+  // Enable/disable default JSON formatter
+  "json.format.enable": true,
+
+  // Enables or disables all validations.
+  "css.validate": false,
+
+  // Enables or disables all validations.
+  "less.validate": false,
+
+  // Enables or disables all validations.
+  "scss.validate": false,
 
   // Enable an explorer view for npm scripts.
   "npm.enableScriptExplorer": false,
-
-
   "telemetry.enableCrashReporter": false,
   "telemetry.enableTelemetry": false,
-
 
   // When set, text selected in the terminal will be copied to the clipboard.
   "terminal.integrated.copyOnSelection": true,
@@ -93,18 +182,10 @@
 
   // Controls the style of terminal cursor.
   "terminal.integrated.cursorStyle": "line",
-
   "terminal.integrated.shell.windows": "C:\\Program Files\\Git\\bin\\bash.exe",
 
   // The command line arguments to use when on the Windows terminal.
   "terminal.integrated.shellArgs.windows": ["-l"],
-
-  // "terminal.integrated.shell.windows": "cmd.exe",
-
-  // "terminal.integrated.shellArgs.windows": [
-  //   "/k", "c:\\cmder-mini\\vscode.bat"
-  // ],
-
   "terminal.integrated.scrollback": 9999,
 
   // Enables Windows background updates.
@@ -112,18 +193,20 @@
 
   // Controls the dimensions of opening a new window when at least one window is already opened. By default, a new window will open in the center of the screen with small dimensions. When set to 'inherit', the window will get the same dimensions as the last window that was active. When set to 'maximized', the window will open maximized and fullscreen if configured to 'fullscreen'. Note that this setting does not have an impact on the first window that is opened. The first window will always restore the size and location as you left it before closing.
   "window.newWindowDimensions": "inherit",
-
-    // Controls the window title based on the active editor. Variables are substituted based on the context:
-  // ${activeEditorShort}: the file name (e.g. myFile.txt)
-  // ${activeEditorMedium}: the path of the file relative to the workspace folder (e.g. myFolder/myFile.txt)
-  // ${activeEditorLong}: the full path of the file (e.g. /Users/Development/myProject/myFolder/myFile.txt)
-  // ${folderName}: name of the workspace folder the file is contained in (e.g. myFolder)
-  // ${folderPath}: file path of the workspace folder the file is contained in (e.g. /Users/Development/myFolder)
-  // ${rootName}: name of the workspace (e.g. myFolder or myWorkspace)
-  // ${rootPath}: file path of the workspace (e.g. /Users/Development/myWorkspace)
-  // ${appName}: e.g. VS Code
-  // ${dirty}: a dirty indicator if the active editor is dirty
-  // ${separator}: a conditional separator (" - ") that only shows when surrounded by variables with values
+  // Controls the window title based on the active editor. Variables are substituted based on the context:
+  // - `${activeEditorShort}`: the file name (e.g. myFile.txt).
+  // - `${activeEditorMedium}`: the path of the file relative to the workspace folder (e.g. myFolder/myFileFolder/myFile.txt).
+  // - `${activeEditorLong}`: the full path of the file (e.g. /Users/Development/myFolder/myFileFolder/myFile.txt).
+  // - `${activeFolderShort}`: the name of the folder the file is contained in (e.g. myFileFolder).
+  // - `${activeFolderMedium}`: the path of the folder the file is contained in, relative to the workspace folder (e.g. myFolder/myFileFolder).
+  // - `${activeFolderLong}`: the full path of the folder the file is contained in (e.g. /Users/Development/myFolder/myFileFolder).
+  // - `${folderName}`: name of the workspace folder the file is contained in (e.g. myFolder).
+  // - `${folderPath}`: file path of the workspace folder the file is contained in (e.g. /Users/Development/myFolder).
+  // - `${rootName}`: name of the workspace (e.g. myFolder or myWorkspace).
+  // - `${rootPath}`: file path of the workspace (e.g. /Users/Development/myWorkspace).
+  // - `${appName}`: e.g. VS Code.
+  // - `${dirty}`: a dirty indicator if the active editor is dirty.
+  // - `${separator}`: a conditional separator (" - ") that only shows when surrounded by variables with values or static text.
   "window.title": "${dirty}${activeEditorMedium}${separator}${rootName}${separator}${appName}",
 
   // Controls if opened editors should show in tabs or not.
@@ -131,15 +214,119 @@
 
   // Controls which editor is shown at startup, if none is restored from the previous session. Select 'none' to start without an editor, 'welcomePage' to open the Welcome page (default), 'newUntitledFile' to open a new untitled file (only opening an empty workspace).
   "workbench.startupEditor": "none",
+  "workbench.colorTheme": "Winter is Coming (Dark Blue)",
+  "workbench.editor.enablePreviewFromQuickOpen": false,
+  "workbench.editor.highlightModifiedTabs": true,
+  "workbench.settings.openDefaultSettings": true,
 
+  // Always show the ESlint status bar item.
+  "eslint.alwaysShowStatus": true,
 
-  "gitlens.recentChanges.highlight.locations": [
-    "overview",
-    "line",
-    "gutter"
-  ],
-  "gitlens.currentLine.format": "${id} ${authorAgoOrDate} • ${message}",
-  "gitlens.statusBar.format": "${id} ${authorAgoOrDate}",
+  // Run the linter on save (onSave) or on type (onType)
+  "eslint.run": "onType",
+
+  // An array of language ids which should be validated by ESLint
+  "eslint.validate": ["javascript", "javascriptreact", "vue"],
+
+  // Use 'prettier-eslint' instead of 'prettier'. Other settings will only be fallbacks in case they could not be inferred from eslint rules.
+  "prettier.eslintIntegration": true,
+
+  // Use 'prettier-stylelint' instead of 'prettier'. Other settings will only be fallbacks in case they could not be inferred from stylelint rules.
+  "prettier.stylelintIntegration": true,
+
+  // Require a 'prettierconfig' to format
+  "prettier.requireConfig": false,
+
+  // Path to a .prettierignore or similar file
+  "prettier.ignorePath": ".gitignore",
+
+  // A list of languages IDs to disable this extension on
+  "prettier.disableLanguages": ["html", "vue"],
+
+  // Validate vue-html in <template> using eslint-plugin-vue
+  "vetur.validation.template": false,
+
+  // Validate js/ts in <script>
+  "vetur.validation.script": false,
+
+  // Validate css/scss/less/postcss in <style>
+  "vetur.validation.style": true,
+
+  // Enable/disable the Vetur document formatter.
+  "vetur.format.enable": true,
+
+  // Default formatter for <template> region
+  //  - none: disable formatting
+  //  - prettyhtml: prettyhtml
+  //  - js-beautify-html: html formatter of js-beautify
+  //  - prettier: prettier
+  "vetur.format.defaultFormatter.html": "prettier",
+
+  // Default formatter for <script> region
+  //  - none: disable formatting
+  //  - prettier: js formatter from prettier
+  //  - prettier-eslint: prettier-eslint
+  //  - vscode-typescript: js formatter from TypeScript
+  "vetur.format.defaultFormatter.js": "prettier-eslint",
+
+  // Default formatter for <script> region
+  //  - none: disable formatting
+  //  - prettier: ts formatter using typescript parser from prettier
+  //  - prettier-tslint: ts formatter from TypeScript
+  "vetur.format.defaultFormatter.ts": "prettier-tslint",
+
+  // Default formatter for <style lang='scss'> region
+  //  - none: disable formatting
+  //  - prettier: scss formatter using scss parser from prettier
+  "vetur.format.defaultFormatter.scss": "prettier",
+
+  // Default formatter for <style> region
+  //  - none: disable formatting
+  //  - prettier: css formatter using css parser from prettier
+  "vetur.format.defaultFormatter.css": "prettier",
+
+  // Default formatter for <style lang='postcss'> region
+  //  - none: disable formatting
+  //  - prettier: postcss formatter using css parser from prettier
+  "vetur.format.defaultFormatter.postcss": "prettier",
+
+  // Control whether htmlhint is enabled for HTML files or not.
+  "htmlhint.enable": true,
+
+  // The associated document types to be linted.
+  "htmlhint.documentSelector": ["vue", "html", "htm"],
+
+  // The htmlhint options object to provide args to the htmlhint command.
+  "htmlhint.options": {
+    "alt-require": false,
+    "attr-lowercase": true,
+    "attr-no-duplication": true,
+    "attr-unsafe-chars": true,
+    "attr-value-double-quotes": true,
+    "attr-value-not-empty": false,
+    "doctype-first": false,
+    "doctype-html5": true,
+    "head-script-disabled": true,
+    "href-abs-or-rel": false,
+    "id-class-ad-disabled": false,
+    "id-class-value": false,
+    "id-unique": true,
+    "inline-script-disabled": false,
+    "inline-style-disabled": false,
+    "space-tab-mixed-disabled": "space",
+    "spec-char-escape": true,
+    "src-not-empty": true,
+    "style-disabled": false,
+    "tag-pair": true,
+    "tag-self-close": false,
+    "tagname-lowercase": true,
+    "title-require": true
+  },
+
+  "git.rebaseWhenSync": true,
+  "gitlens.recentChanges.highlight.locations": ["overview", "line", "gutter"],
+  "gitlens.currentLine.format": "${id} ${author}, ${agoOrDate} • ${message}",
+  "gitlens.statusBar.format": "${id} ${author}, ${agoOrDate}",
   "gitlens.hovers.currentLine.over": "line",
   "gitlens.currentLine.enabled": false,
   "gitlens.codeLens.enabled": false,
@@ -156,42 +343,163 @@
   "gitlens.advanced.telemetry.enabled": false,
   "gitlens.views.fileHistory.enabled": true,
   "gitlens.views.lineHistory.enabled": true,
-
   "sync.gist": "4c333bfdf374e853c8f610e8d9634c19",
   "sync.autoDownload": false,
   "sync.autoUpload": false,
   "sync.quietSync": false,
   "sync.askGistName": false,
-  "diffEditor.ignoreTrimWhitespace": true,
   "sync.removeExtensions": true,
   "sync.syncExtensions": true,
-  "breadcrumbs.enabled": true,
-  "window.menuBarVisibility": "toggle",
-  "workbench.editor.enablePreviewFromQuickOpen": false,
-  "editor.suggest.localityBonus": true,
-  "git.rebaseWhenSync": true,
   "sync.forceDownload": false,
-  "cSpell.userWords": [
-    "extralight",
-    "massoc"
+  "diffEditor.ignoreTrimWhitespace": true,
+  "window.menuBarVisibility": "toggle",
+  // Specifies whether Peacock should affect the activity bar.
+  "peacock.affectActivityBar": false,
+  // Specifies whether Peacock should affect the status bar.
+  "peacock.affectStatusBar": false,
+  // Specifies whether Peacock should affect the title bar.
+  "peacock.affectTitleBar": true,
+  // Adjusts the colorization of affected elements to provide visual contrast
+  "peacock.elementAdjustments": {
+    "activityBar": "lighten",
+    "statusBar": "lighten",
+    "titleBar": "darken"
+  },
+  // Your favorite colors
+  "peacock.favoriteColors": [
+    {
+      "name": "Angular Red",
+      "value": "#b52e31"
+    },
+    {
+      "name": "Auth0 Orange",
+      "value": "#eb5424"
+    },
+    {
+      "name": "Azure Blue",
+      "value": "#007fff"
+    },
+    {
+      "name": "C# Purple",
+      "value": "#68217A"
+    },
+    {
+      "name": "Gatsby Purple",
+      "value": "#639"
+    },
+    {
+      "name": "Go Cyan",
+      "value": "#5dc9e2"
+    },
+    {
+      "name": "Java Blue-Gray",
+      "value": "#557c9b"
+    },
+    {
+      "name": "JavaScript Yellow",
+      "value": "#f9e64f"
+    },
+    {
+      "name": "Mandalorian Blue",
+      "value": "#1857a4"
+    },
+    {
+      "name": "Node Green",
+      "value": "#215732"
+    },
+    {
+      "name": "React Blue",
+      "value": "#00b3e6"
+    },
+    {
+      "name": "Something Different",
+      "value": "#832561"
+    },
+    {
+      "name": "Vue Green",
+      "value": "#42b883"
+    },
+    {
+      "name": "AIESEC Red",
+      "value": "f85a40"
+    },
+    {
+      "name": "AIESEC Blue",
+      "value": "037ef3"
+    },
+    {
+      "name": "AIESEC Green",
+      "value": "30c39e"
+    },
+    {
+      "name": "AIESEC Teal",
+      "value": "0a8ea0"
+    },
+    {
+      "name": "AIESEC Yellow",
+      "value": "ffc845"
+    },
+    {
+      "name": "AIESEC Orange",
+      "value": "f48924"
+    },
+    {
+      "name": "AIESEC Dark Grey",
+      "value": "52565e"
+    },
+    {
+      "name": "AIESEC Grey",
+      "value": "caccd1"
+    },
+    {
+      "name": "AIESEC Light Grey",
+      "value": "f3f4f7"
+    }
   ],
-  "workbench.colorTheme": "Winter is Coming (Dark Blue)",
-  "search.usePCRE2": true,
-  "search.showLineNumbers": true,
-  "workbench.editor.highlightModifiedTabs": true,
-  "window.zoomLevel": 0,
-  "terminal.integrated.rendererType": "dom",
-  "typescript.tsc.autoDetect": "off",
-  "jsDocCompletion.enabled": false,
-  /*
-  // Controls if opened editors from Quick Open show as preview. Preview editors are reused until they are kept (e.g. via double click or editing).
-  "workbench.editor.enablePreviewFromQuickOpen": false,
-
-  // Controls if an editor is revealed in any of the visible groups if opened. If disabled, an editor will prefer to open in the currently active editor group. If enabled, an already opened editor will be revealed instead of opened again in the currently active editor group. Note that there are some cases where this setting is ignored, e.g. when forcing an editor to open in a specific group or to the side of the currently active group.
-  "workbench.editor.revealIfOpen": true,
-
-  // Controls if Quick Open should close automatically once it loses focus.
-  "workbench.quickOpen.closeOnFocusLost": false,
-
-  */
+  // Specifies that Peacock should surprise you at the start of every editing session
+  "peacock.surpriseMeOnStartup": false,
+  "cSpell.words": [
+    "Biometric",
+    "Ecommerce",
+    "Iata",
+    "Iatas",
+    "KOBALOS",
+    "PHABLET",
+    "Pikaday",
+    "Prefill",
+    "Upsell",
+    "backend",
+    "bancontact",
+    "captcha",
+    "checkin",
+    "compositionend",
+    "compositionstart",
+    "debounced",
+    "farelock",
+    "hassoc",
+    "hevolve",
+    "loglevel",
+    "maxlength",
+    "mixins",
+    "modalception",
+    "navitaire",
+    "oget",
+    "pika",
+    "polyfill",
+    "rebook",
+    "redmob",
+    "routie",
+    "scrollbar",
+    "selectable",
+    "unassign",
+    "unformat",
+    "unnest",
+    "upsold",
+    "validators",
+    "vnode",
+    "vuex",
+    "wizz"
+  ],
+  "workbench.enableExperiments": false,
+  "cSpell.userWords": ["Deeplink", "automagically"]
 }
