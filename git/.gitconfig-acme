@@ -18,6 +18,7 @@
 [merge]
     conflictStyle = diff3
     tool = code
+	renameLimit = 5000
 
 [merge "npm-merge-driver"]
 	name = automatically merge npm lockfiles
@@ -60,7 +61,7 @@
     br = branch
 
 [winUpdater]
-	recentlySeenVersion = 2.22.0.windows.1
+	recentlySeenVersion = 2.23.0.windows.1
 
 [rerere]
 	enabled = true

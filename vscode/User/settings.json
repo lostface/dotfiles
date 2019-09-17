@@ -1,139 +1,215 @@
-// Place your settings in this file to overwrite the default settings
 {
-  "editor.rulers": [
-    80,
-    120,
-    160
-  ],
+  "files.exclude": {
+    "**/.git": true,
+    "**/.svn": true,
+    "**/.hg": true,
+    "**/CVS": true,
+    "**/.DS_Store": true,
+    "**/node_modules/": false,
+    ".vscode/": false,
+    ".tmp/": false,
+    "dist/": false
+  },
 
-  // Controls the font family.
-  "editor.fontFamily": "Fira Code",
+  "files.watcherExclude": {
+    "**/.git/objects/**": true,
+    "**/.git/subtree-cache/**": true,
+    "**/node_modules/*/**": true,
+    "**/.tmp/**": true,
+    "**/dist/**": true
+  },
 
-  // Enables font ligatures
-  "editor.fontLigatures": true,
+  "search.exclude": {
+    "**/node_modules": true,
+    "**/bower_components": true,
+    ".vscode/": true,
+    ".tmp/": true,
+    "dist/": true
+  },
 
-  // Controls the font size in pixels.
-  "editor.fontSize": 14,
+  "files.associations": {
+    "*.env": "properties"
+  },
 
-  // The number of spaces a tab is equal to. This setting is overridden based on the file contents when `editor.detectIndentation` is on.
+  "[json]": {
+    // "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+
+  "[jsonc]": {
+    // "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+
+  "[vue]": {
+    // "editor.defaultFormatter": "octref.vetur",
+  },
+  
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": false,
+  "editor.formatOnPaste": false,
+  "editor.formatOnType": false,
+  "editor.formatOnSaveTimeout": 5000,
+
+  "editor.codeActionsOnSave": {
+    "source.fixAll": false,
+    "source.organizeImports": false
+  },
+
+  "editor.codeActionsOnSaveTimeout": 5000,
+
   "editor.tabSize": 2,
+  "editor.fontFamily": "Fira Code",
+  "editor.fontSize": 14,
+  "editor.fontLigatures": true,
+  "editor.renderWhitespace": "selection",
+  "editor.rulers": [80, 120, 160],
 
-  // Controls if suggestions should automatically show up while typing
   "editor.quickSuggestions": {
     "other": true,
     "comments": true,
     "strings": true
   },
 
-  // Controls if the editor should allow to move selections via drag and drop.
   "editor.dragAndDrop": false,
-
-  // Controls if the editor will scroll using an animation
   "editor.smoothScrolling": true,
 
-  // Code action kinds to be run on save.
-  "editor.codeActionsOnSave": {
-    "source.organizeImports": false
-  },
+  "editor.tabCompletion": "on",
+  "editor.multiCursorModifier": "ctrlCmd",
 
-  // Timeout for code actions run on save.
-  "editor.codeActionsOnSaveTimeout": 3000,
-  
-  // Format on save timeout. Specifies a time limit in milliseconds for formatOnSave-commands. Commands taking longer than the specified timeout will be cancelled.
-  "editor.formatOnSaveTimeout": 3000,
+  "editor.suggest.localityBonus": true,
+  "editor.gotoLocation.multiple": "goto",
+  "editor.cursorSurroundingLines": 6,
 
-  
-  // Controls whether and how symbols are shown in the breadcrumbs view.
-  //  - on: Show all symbols in the breadcrumbs view.
-  //  - off: Do not show symbols in the breadcrumbs view.
-  //  - last: Only show the current symbol in the breadcrumbs view.
-  "breadcrumbs.symbolPath": "off",
+  "explorer.incrementalNaming": "smart",
 
+  "breadcrumbs.enabled": true,
 
-  // Controls auto save of dirty files. Accepted values:  'off', 'afterDelay', 'onFocusChange' (editor loses focus), 'onWindowChange' (window loses focus). If set to 'afterDelay', you can configure the delay in 'files.autoSaveDelay'.
+  "breadcrumbs.symbolPath": "last",
+
   "files.autoSave": "onFocusChange",
-
-  // When enabled, insert a final new line at the end of the file when saving it.
   "files.insertFinalNewline": true,
-
-  // When enabled, will trim all new lines after the final new line at the end of the file when saving it.
   "files.trimFinalNewlines": true,
 
-
-  // Searches case-insensitively if the pattern is all lowercase, otherwise, searches case-sensitively
   "search.smartCase": true,
+  "search.showLineNumbers": true,
+  "merge-conflict.diffViewPosition": "Below",
 
-
-  // End with a newline.
   "html.format.endWithNewline": true,
 
-  // Configures if the built-in HTML language support suggests Angular V1 tags and properties.
-  "html.suggest.angular1": false,
-
-  // Configures if the built-in HTML language support suggests Ionic tags, properties and values.
-  "html.suggest.ionic": false,
-
-
-  // Enable/disable semantic checking of JavaScript files. Existing jsconfig.json or tsconfig.json files override this setting. Requires TypeScript >=2.3.1.
+  "javascript.format.enable": false,
+  "javascript.validate.enable": false,
   "javascript.implicitProjectConfig.checkJs": true,
 
+  "typescript.format.enable": false,
+  "typescript.validate.enable": false,
 
-  // Enable an explorer view for npm scripts.
+  "json.format.enable": false,
+
+  "css.validate": false,
+  "less.validate": false,
+  "scss.validate": false,
+
   "npm.enableScriptExplorer": false,
-
-
   "telemetry.enableCrashReporter": false,
   "telemetry.enableTelemetry": false,
 
-
-  // When set, text selected in the terminal will be copied to the clipboard.
   "terminal.integrated.copyOnSelection": true,
-
-  // Controls whether the terminal cursor blinks.
   "terminal.integrated.cursorBlinking": true,
-
-  // Controls the style of terminal cursor.
   "terminal.integrated.cursorStyle": "line",
-
   "terminal.integrated.shell.windows": "C:\\Program Files\\Git\\bin\\bash.exe",
-
-  // The command line arguments to use when on the Windows terminal.
   "terminal.integrated.shellArgs.windows": ["-l"],
-
   "terminal.integrated.scrollback": 9999,
 
-  // Enables Windows background updates.
   "update.enableWindowsBackgroundUpdates": false,
 
-  // Controls the dimensions of opening a new window when at least one window is already opened. By default, a new window will open in the center of the screen with small dimensions. When set to 'inherit', the window will get the same dimensions as the last window that was active. When set to 'maximized', the window will open maximized and fullscreen if configured to 'fullscreen'. Note that this setting does not have an impact on the first window that is opened. The first window will always restore the size and location as you left it before closing.
   "window.newWindowDimensions": "inherit",
-
-    // Controls the window title based on the active editor. Variables are substituted based on the context:
-  // ${activeEditorShort}: the file name (e.g. myFile.txt)
-  // ${activeEditorMedium}: the path of the file relative to the workspace folder (e.g. myFolder/myFile.txt)
-  // ${activeEditorLong}: the full path of the file (e.g. /Users/Development/myProject/myFolder/myFile.txt)
-  // ${folderName}: name of the workspace folder the file is contained in (e.g. myFolder)
-  // ${folderPath}: file path of the workspace folder the file is contained in (e.g. /Users/Development/myFolder)
-  // ${rootName}: name of the workspace (e.g. myFolder or myWorkspace)
-  // ${rootPath}: file path of the workspace (e.g. /Users/Development/myWorkspace)
-  // ${appName}: e.g. VS Code
-  // ${dirty}: a dirty indicator if the active editor is dirty
-  // ${separator}: a conditional separator (" - ") that only shows when surrounded by variables with values
   "window.title": "${dirty}${activeEditorMedium}${separator}${rootName}${separator}${appName}",
 
-  // Controls if opened editors should show in tabs or not.
   "workbench.editor.showTabs": false,
-
-  // Controls which editor is shown at startup, if none is restored from the previous session. Select 'none' to start without an editor, 'welcomePage' to open the Welcome page (default), 'newUntitledFile' to open a new untitled file (only opening an empty workspace).
   "workbench.startupEditor": "none",
+  "workbench.colorTheme": "Winter is Coming (Dark Blue)",
+  "workbench.editor.enablePreviewFromQuickOpen": false,
+  "workbench.editor.highlightModifiedTabs": true,
+  "workbench.settings.openDefaultSettings": true,
 
-  "gitlens.recentChanges.highlight.locations": [
-    "overview",
-    "line",
-    "gutter"
+  "eslint.validate": [
+    "javascript",
+    "javascriptreact",
+    { "language": "vue", "autoFix": true }
   ],
-  "gitlens.currentLine.format": "${id} ${authorAgoOrDate} • ${message}",
-  "gitlens.statusBar.format": "${id} ${authorAgoOrDate}",
+  "eslint.run": "onType",
+  "eslint.autoFixOnSave": false,
+  "eslint.alwaysShowStatus": true,
+
+  "prettier.requireConfig": false,
+  "prettier.eslintIntegration": true,
+  "prettier.stylelintIntegration": true,
+  "prettier.tslintIntegration": true,
+  "prettier.ignorePath": ".gitignore",
+  "prettier.disableLanguages": ["html"],
+  "prettier.printWidth": 120,
+  "prettier.singleQuote": true,
+  "prettier.arrowParens": "avoid",
+
+  "vetur.validation.template": false,
+  "vetur.validation.script": false,
+  "vetur.validation.style": false,
+  "vetur.format.enable": false,
+  "vetur.format.defaultFormatter.html": "prettier", // here we need proper prettier-eslint, prettierhtml conflicts with eslint fix
+  "vetur.format.defaultFormatter.js": "prettier-eslint", // only works if local prettier-eslint installed
+  "vetur.format.defaultFormatter.ts": "prettier-tslint", // only works if local prettier-tslint installed
+  "vetur.format.defaultFormatter.scss": "prettier", // prettier-stylelint would be the good choice
+  "vetur.format.defaultFormatter.css": "prettier", // prettier-stylelint would be the good choice
+  "vetur.format.defaultFormatter.postcss": "prettier", // prettier-stylelint would be the good choice
+
+  "vetur.format.defaultFormatterOptions": {
+    "js-beautify-html": {
+      "wrap_attributes": "force-expand-multiline"
+    },
+
+    "prettyhtml": {
+      "printWidth": 120,
+      "singleQuote": false,
+      "wrapAttributes": true,
+      "sortAttributes": false
+    }
+  },
+
+  "formattingToggle.activateFor": ["formatOnSave"],
+
+  "htmlhint.enable": true,
+
+  "htmlhint.documentSelector": ["vue", "html", "htm"],
+
+  "htmlhint.options": {
+    "alt-require": false,
+    "attr-lowercase": true,
+    "attr-no-duplication": true,
+    "attr-unsafe-chars": true,
+    "attr-value-double-quotes": true,
+    "attr-value-not-empty": false,
+    "doctype-first": false,
+    "doctype-html5": true,
+    "head-script-disabled": true,
+    "href-abs-or-rel": false,
+    "id-class-ad-disabled": false,
+    "id-class-value": false,
+    "id-unique": true,
+    "inline-script-disabled": false,
+    "inline-style-disabled": false,
+    "space-tab-mixed-disabled": "space",
+    "spec-char-escape": true,
+    "src-not-empty": true,
+    "style-disabled": false,
+    "tag-pair": true,
+    "tag-self-close": false,
+    "tagname-lowercase": true,
+    "title-require": true
+  },
+
+  "git.rebaseWhenSync": true,
+  "gitlens.recentChanges.highlight.locations": ["overview", "line", "gutter"],
+  "gitlens.currentLine.format": "${id} ${author}, ${agoOrDate} • ${message}",
+  "gitlens.statusBar.format": "${id} ${author}, ${agoOrDate}",
   "gitlens.hovers.currentLine.over": "line",
   "gitlens.currentLine.enabled": false,
   "gitlens.codeLens.enabled": false,
@@ -148,41 +224,198 @@
     "suppressShowKeyBindingsNotice": true
   },
   "gitlens.advanced.telemetry.enabled": false,
-
+  "gitlens.views.fileHistory.enabled": true,
+  "gitlens.views.lineHistory.enabled": true,
   "sync.gist": "4c333bfdf374e853c8f610e8d9634c19",
   "sync.autoDownload": false,
   "sync.autoUpload": false,
   "sync.quietSync": false,
   "sync.askGistName": false,
-  "diffEditor.ignoreTrimWhitespace": true,
   "sync.removeExtensions": true,
   "sync.syncExtensions": true,
-  "breadcrumbs.enabled": true,
-  "window.menuBarVisibility": "toggle",
-  "workbench.editor.enablePreviewFromQuickOpen": false,
-  "editor.suggest.localityBonus": true,
-  "git.rebaseWhenSync": true,
   "sync.forceDownload": false,
-  "cSpell.userWords": [
-    "extralight",
-    "massoc"
+  "diffEditor.ignoreTrimWhitespace": true,
+  "window.menuBarVisibility": "toggle",
+
+  "peacock.affectActivityBar": false,
+  "peacock.affectStatusBar": false,
+  "peacock.affectTitleBar": true,
+
+  "peacock.elementAdjustments": {
+    "activityBar": "lighten",
+    "statusBar": "lighten",
+    "titleBar": "darken"
+  },
+
+  "peacock.favoriteColors": [
+    {
+      "name": "Angular Red",
+      "value": "#b52e31"
+    },
+    {
+      "name": "Auth0 Orange",
+      "value": "#eb5424"
+    },
+    {
+      "name": "Azure Blue",
+      "value": "#007fff"
+    },
+    {
+      "name": "C# Purple",
+      "value": "#68217A"
+    },
+    {
+      "name": "Gatsby Purple",
+      "value": "#639"
+    },
+    {
+      "name": "Go Cyan",
+      "value": "#5dc9e2"
+    },
+    {
+      "name": "Java Blue-Gray",
+      "value": "#557c9b"
+    },
+    {
+      "name": "JavaScript Yellow",
+      "value": "#f9e64f"
+    },
+    {
+      "name": "Mandalorian Blue",
+      "value": "#1857a4"
+    },
+    {
+      "name": "Node Green",
+      "value": "#215732"
+    },
+    {
+      "name": "React Blue",
+      "value": "#00b3e6"
+    },
+    {
+      "name": "Something Different",
+      "value": "#832561"
+    },
+    {
+      "name": "Vue Green",
+      "value": "#42b883"
+    },
+    {
+      "name": "AIESEC Red",
+      "value": "f85a40"
+    },
+    {
+      "name": "AIESEC Blue",
+      "value": "037ef3"
+    },
+    {
+      "name": "AIESEC Green",
+      "value": "30c39e"
+    },
+    {
+      "name": "AIESEC Teal",
+      "value": "0a8ea0"
+    },
+    {
+      "name": "AIESEC Yellow",
+      "value": "ffc845"
+    },
+    {
+      "name": "AIESEC Orange",
+      "value": "f48924"
+    },
+    {
+      "name": "AIESEC Dark Grey",
+      "value": "52565e"
+    },
+    {
+      "name": "AIESEC Grey",
+      "value": "caccd1"
+    },
+    {
+      "name": "AIESEC Light Grey",
+      "value": "f3f4f7"
+    }
   ],
-  "workbench.colorTheme": "Solarized Dark",
-  "search.usePCRE2": true,
-  "search.showLineNumbers": true,
-  "workbench.editor.highlightModifiedTabs": true,
-  "gitlens.views.fileHistory.enabled": true,
-  "gitlens.views.lineHistory.enabled": true,
-  "jsDocCompletion.enabled": false,
-  /*
-  // Controls if opened editors from Quick Open show as preview. Preview editors are reused until they are kept (e.g. via double click or editing).
-  "workbench.editor.enablePreviewFromQuickOpen": false,
 
-  // Controls if an editor is revealed in any of the visible groups if opened. If disabled, an editor will prefer to open in the currently active editor group. If enabled, an already opened editor will be revealed instead of opened again in the currently active editor group. Note that there are some cases where this setting is ignored, e.g. when forcing an editor to open in a specific group or to the side of the currently active group.
-  "workbench.editor.revealIfOpen": true,
+  "peacock.surpriseMeOnStartup": false,
 
-  // Controls if Quick Open should close automatically once it loses focus.
-  "workbench.quickOpen.closeOnFocusLost": false,
+  "cSpell.words": [
+    "Biometric",
+    "Ecommerce",
+    "Iata",
+    "Iatas",
+    "KOBALOS",
+    "PHABLET",
+    "Pikaday",
+    "Prefill",
+    "Upsell",
+    "backend",
+    "bancontact",
+    "captcha",
+    "checkin",
+    "compositionend",
+    "compositionstart",
+    "debounced",
+    "farelock",
+    "hassoc",
+    "hevolve",
+    "loglevel",
+    "maxlength",
+    "mixins",
+    "modalception",
+    "navitaire",
+    "oget",
+    "pika",
+    "polyfill",
+    "rebook",
+    "redmob",
+    "routie",
+    "scrollbar",
+    "selectable",
+    "unassign",
+    "unformat",
+    "unnest",
+    "upsold",
+    "validators",
+    "vnode",
+    "vuex",
+    "wizz"
+  ],
+  "workbench.enableExperiments": false,
+  "cSpell.userWords": ["Deeplink", "automagically", "entrypoints"],
+  "sync.forceUpload": true,
+  "window.zoomLevel": 0,
 
-  */
+  "launch": {
+    "configurations": [
+      {
+        "type": "node",
+        "request": "launch",
+        "name": "Webpack Dev Server",
+        "program": "${workspaceFolder}/build/index.js",
+        "args": ["--dev-server"],
+        "envFile": "${workspaceFolder}/.env",
+        "env": { "NODE_ENV": "development" }
+      },
+      {
+        "type": "node",
+        "request": "launch",
+        "name": "Webpack Prod Server",
+        "program": "${workspaceFolder}/build/index.js",
+        "args": ["--dev-server"],
+        "envFile": "${workspaceFolder}/.env",
+        "env": { "NODE_ENV": "production" }
+      },
+      {
+        "type": "node",
+        "request": "launch",
+        "name": "Webpack Prod Build",
+        "program": "${workspaceFolder}/build/index.js",
+        "args": [],
+        "envFile": "${workspaceFolder}/.env",
+        "env": { "NODE_ENV": "production" }
+      }
+    ]
+  }
 }
