@@ -1,3 +1,15 @@
+# misc aliases
+alias ni='npm i'
+alias nt='npm t'
+alias ntw='npm run test:watch'
+alias nte='npm run test:e2e'
+alias nl='npm run lint'
+alias nlj='npm run lint:js'
+alias nls='npm run lint:style'
+alias nd='npm run dev'
+alias np='npm run prod'
+alias nb='npm run build'
+
 # git aliases
 alias gf='git fetch -p';
 __git_complete gf _git_fetch
