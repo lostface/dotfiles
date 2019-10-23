@@ -9,6 +9,9 @@ alias nls='npm run lint:style'
 alias nd='npm run dev'
 alias np='npm run prod'
 alias nb='npm run build'
+alias nod='npm outdated'
+alias nls='npm list'
+alias nls0='npm list --depth 0'
 
 # git aliases
 alias gf='git fetch -p';
