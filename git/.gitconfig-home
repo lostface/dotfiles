@@ -18,6 +18,7 @@
 [merge]
     conflictStyle = diff3
     tool = code
+    renameLimit = 5000
 
 [mergetool]
     prompt = true
