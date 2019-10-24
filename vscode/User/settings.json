@@ -8,7 +8,8 @@
     "**/node_modules/": false,
     ".vscode/": false,
     ".tmp/": false,
-    "dist/": false
+    "dist/": false,
+    "marathon/dist/": false,
   },
 
   "files.watcherExclude": {
@@ -16,7 +17,7 @@
     "**/.git/subtree-cache/**": true,
     "**/node_modules/*/**": true,
     "**/.tmp/**": true,
-    "**/dist/**": true
+    "**/dist/**": true,
   },
 
   "search.exclude": {
@@ -24,27 +25,41 @@
     "**/bower_components": true,
     ".vscode/": true,
     ".tmp/": true,
-    "dist/": true
-  },
+    "dist/": true,
+    "marathon/dist/": true,
+  },  
 
   "files.associations": {
     "*.env": "properties"
   },
 
+  "scm.defaultViewMode": "tree",
+
+  "[vue]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    // "editor.defaultFormatter": "octref.vetur",
+    // "editor.defaultFormatter": null,
+    // "editor.formatOnSave": false,
+  },
+  
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+
   "[json]": {
-    // "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
 
   "[jsonc]": {
-    // "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
 
-  "[vue]": {
-    // "editor.defaultFormatter": "octref.vetur",
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  
-  "editor.defaultFormatter": "esbenp.prettier-vscode",
-  "editor.formatOnSave": false,
+
+  // "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true,
   "editor.formatOnPaste": false,
   "editor.formatOnType": false,
   "editor.formatOnSaveTimeout": 5000,
@@ -77,7 +92,7 @@
 
   "editor.suggest.localityBonus": true,
   "editor.gotoLocation.multiple": "goto",
-  "editor.cursorSurroundingLines": 6,
+  "editor.cursorSurroundingLines": 2,
 
   "explorer.incrementalNaming": "smart",
 
@@ -95,14 +110,14 @@
 
   "html.format.endWithNewline": true,
 
-  "javascript.format.enable": false,
+  "javascript.format.enable": true,
   "javascript.validate.enable": false,
   "javascript.implicitProjectConfig.checkJs": true,
 
   "typescript.format.enable": false,
   "typescript.validate.enable": false,
 
-  "json.format.enable": false,
+  "json.format.enable": true,
 
   "css.validate": false,
   "less.validate": false,
@@ -126,7 +141,6 @@
 
   "workbench.editor.showTabs": false,
   "workbench.startupEditor": "none",
-  "workbench.colorTheme": "Winter is Coming (Dark Blue)",
   "workbench.editor.enablePreviewFromQuickOpen": false,
   "workbench.editor.highlightModifiedTabs": true,
   "workbench.settings.openDefaultSettings": true,
@@ -174,7 +188,7 @@
     }
   },
 
-  "formattingToggle.activateFor": ["formatOnSave"],
+  "formattingToggle.affects": ["formatOnSave"],
 
   "htmlhint.enable": true,
 
@@ -230,7 +244,6 @@
   "sync.autoDownload": false,
   "sync.autoUpload": false,
   "sync.quietSync": false,
-  "sync.askGistName": false,
   "sync.removeExtensions": true,
   "sync.syncExtensions": true,
   "sync.forceDownload": false,
@@ -417,5 +430,13 @@
         "env": { "NODE_ENV": "production" }
       }
     ]
-  }
+  },
+  "code-runner.enableAppInsights": false,
+  "rest-client.enableTelemetry": false,
+  "vsintellicode.java.completionsEnabled": false,
+  "vsintellicode.python.completionsEnabled": false,
+  "editor.lineHeight": 24,
+  "editor.suggestSelection": "first",
+  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+  "workbench.colorTheme": "Winter is Coming (Dark Blue)"
 }
