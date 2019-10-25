@@ -1,5 +1,6 @@
 # misc aliases
 alias ni='npm i'
+alias nid='npm i -D'
 alias nr='npm r'
 alias nt='npm t'
 alias ntw='npm run test:watch'
@@ -94,8 +95,15 @@ alias gsif='git ls-files --other --ignored --exclude-standard';
 __git_complete gsif _git_ls_files
 alias gsh='git show';
 __git_complete gsh _git_show
+
 alias gp='git push';
-__git_complete gsh _git_push
+alias gpn='git push --no-verify';
+alias gpf='git push --force-with-lease';
+alias gpfn='git push --force-with-lease --no-verify';
+__git_complete gp _git_push
+__git_complete gpn _git_push
+__git_complete gpf _git_push
+__git_complete gpfn _git_push
 
 alias gl='git log --pretty=format:"%h | %cd | %s%d [%cn]%n" --date=short';
 alias glo='git log --pretty=format:"%h | %cd | %s%d [%cn]%n" --date=short origin/`git symbolic-ref --short HEAD`';
