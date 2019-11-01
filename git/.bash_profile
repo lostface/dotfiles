@@ -138,8 +138,8 @@ __git_complete gaa _git_add
 
 alias gst='git stash';
 alias gstl='git stash list';
-alias gstk='git stash --keep-index';
-alias gstu='git stash --include-untracked';
+alias gstk='git stash push --keep-index';
+alias gstu='git stash push --include-untracked';
 alias gstall='git stash --all';
 alias gsta='git stash apply';
 alias gstp='git stash pop';
