@@ -309,7 +309,7 @@
   "diffEditor.ignoreTrimWhitespace": true,
   "window.menuBarVisibility": "toggle",
 
-  "peacock.affectActivityBar": false,
+  "peacock.affectActivityBar": true,
   "peacock.affectStatusBar": false,
   "peacock.affectTitleBar": true,
 
