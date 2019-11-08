@@ -159,6 +159,7 @@
   "files.insertFinalNewline": true,
   "files.trimFinalNewlines": true,
 
+  "search.location": "sidebar",
   "search.smartCase": true,
   "search.showLineNumbers": true,
   "merge-conflict.diffViewPosition": "Below",
@@ -199,6 +200,7 @@
   "workbench.editor.enablePreviewFromQuickOpen": false,
   "workbench.editor.highlightModifiedTabs": true,
   "workbench.settings.openDefaultSettings": true,
+  "workbench.sideBar.location": "right",
 
   "eslint.validate": [
     "javascript",
