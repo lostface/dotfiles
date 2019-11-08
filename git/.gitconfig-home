@@ -59,7 +59,7 @@
     br = branch
 
 [winUpdater]
-	recentlySeenVersion = 2.23.0.windows.1
+	recentlySeenVersion = 2.24.0.windows.2
 
 [rerere]
 	enabled = true

@@ -59,10 +59,11 @@
   },
 
   // "editor.defaultFormatter": "esbenp.prettier-vscode",
-  "editor.formatOnSave": true,
+  "editor.formatOnSave": false,
   "editor.formatOnPaste": false,
   "editor.formatOnType": false,
   "editor.formatOnSaveTimeout": 5000,
+  "editor.lineHeight": 24,
 
   "editor.codeActionsOnSave": {
     "source.fixAll": false,
@@ -78,6 +79,7 @@
   "editor.renderWhitespace": "selection",
   "editor.rulers": [80, 120, 160],
 
+  "editor.suggestSelection": "first",
   "editor.quickSuggestions": {
     "other": true,
     "comments": true,
@@ -95,10 +97,63 @@
   "editor.cursorSurroundingLines": 2,
 
   "explorer.incrementalNaming": "smart",
-
+  
   "breadcrumbs.enabled": true,
-
   "breadcrumbs.symbolPath": "last",
+  
+  "breadcrumbs.showArrays": false,
+	"breadcrumbs.showBooleans": false,
+	"breadcrumbs.showClasses": true,
+	"breadcrumbs.showConstants": false,
+	"breadcrumbs.showConstructors": false,
+	"breadcrumbs.showEnumMembers": false,
+	"breadcrumbs.showEnums": true,
+	"breadcrumbs.showEvents": false,
+	"breadcrumbs.showFields": false,
+	"breadcrumbs.showFiles": true,
+	"breadcrumbs.showFunctions": true,
+	"breadcrumbs.showInterfaces": true,
+	"breadcrumbs.showKeys": false,
+	"breadcrumbs.showMethods": true,
+	"breadcrumbs.showModules": true,
+	"breadcrumbs.showNamespaces": true,
+	"breadcrumbs.showNull": false,
+	"breadcrumbs.showNumbers": false,
+	"breadcrumbs.showObjects": false,
+	"breadcrumbs.showOperators": false,
+	"breadcrumbs.showPackages": true,
+	"breadcrumbs.showProperties": false,
+	"breadcrumbs.showStrings": false,
+	"breadcrumbs.showStructs": true,
+	"breadcrumbs.showTypeParameters": false,
+	"breadcrumbs.showVariables": false,
+
+	"outline.showArrays": true,
+	"outline.showBooleans": true,
+	"outline.showClasses": true,
+	"outline.showConstants": true,
+	"outline.showConstructors": true,
+	"outline.showEnumMembers": true,
+	"outline.showEnums": true,
+	"outline.showEvents": true,
+	"outline.showFields": true,
+	"outline.showFiles": true,
+	"outline.showFunctions": true,
+	"outline.showInterfaces": true,
+	"outline.showKeys": true,
+	"outline.showMethods": true,
+	"outline.showModules": true,
+	"outline.showNamespaces": true,
+	"outline.showNull": true,
+	"outline.showNumbers": true,
+	"outline.showObjects": true,
+	"outline.showOperators": true,
+	"outline.showPackages": true,
+	"outline.showProperties": true,
+	"outline.showStrings": true,
+	"outline.showStructs": true,
+	"outline.showTypeParameters": true,
+	"outline.showVariables": true,
 
   "files.autoSave": "onFocusChange",
   "files.insertFinalNewline": true,
@@ -221,6 +276,8 @@
   },
 
   "git.rebaseWhenSync": true,
+  "git.untrackedChanges": "separate",
+
   "gitlens.recentChanges.highlight.locations": ["overview", "line", "gutter"],
   "gitlens.currentLine.format": "${id} ${author}, ${agoOrDate} • ${message}",
   "gitlens.statusBar.format": "${id} ${author}, ${agoOrDate}",
@@ -240,6 +297,7 @@
   "gitlens.advanced.telemetry.enabled": false,
   "gitlens.views.fileHistory.enabled": true,
   "gitlens.views.lineHistory.enabled": true,
+
   "sync.gist": "4c333bfdf374e853c8f610e8d9634c19",
   "sync.autoDownload": false,
   "sync.autoUpload": false,
@@ -247,6 +305,7 @@
   "sync.removeExtensions": true,
   "sync.syncExtensions": true,
   "sync.forceDownload": false,
+
   "diffEditor.ignoreTrimWhitespace": true,
   "window.menuBarVisibility": "toggle",
 
@@ -431,12 +490,13 @@
       }
     ]
   },
+
   "code-runner.enableAppInsights": false,
   "rest-client.enableTelemetry": false,
   "vsintellicode.java.completionsEnabled": false,
   "vsintellicode.python.completionsEnabled": false,
-  "editor.lineHeight": 24,
-  "editor.suggestSelection": "first",
   "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
-  "workbench.colorTheme": "Winter is Coming (Dark Blue)"
+  "workbench.colorTheme": "Night Owl Light",
+  "workbench.iconTheme": "material-icon-theme",
+  "material-icon-theme.saturation": 1
 }
