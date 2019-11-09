@@ -11,7 +11,7 @@ alias nlts='npm run lint:style'
 alias nd='npm run dev'
 alias np='npm run prod'
 alias nb='npm run build'
-alias nod='npm outdated'
+alias nod='npm outdated --long'
 alias nl='npm list'
 alias nl0='npm list --depth 0'
 
