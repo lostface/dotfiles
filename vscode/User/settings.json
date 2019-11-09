@@ -78,6 +78,7 @@
   "editor.fontLigatures": true,
   "editor.renderWhitespace": "selection",
   "editor.rulers": [80, 120, 160],
+  "editor.minimap.enabled": false,
 
   "editor.suggestSelection": "first",
   "editor.quickSuggestions": {
@@ -200,7 +201,7 @@
   "workbench.editor.enablePreviewFromQuickOpen": false,
   "workbench.editor.highlightModifiedTabs": true,
   "workbench.settings.openDefaultSettings": true,
-  "workbench.sideBar.location": "right",
+  "workbench.sideBar.location": "left",
 
   "eslint.validate": [
     "javascript",
