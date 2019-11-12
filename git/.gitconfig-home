@@ -13,7 +13,7 @@
     default = simple
 
 [pull]
-	rebase = preserve
+	rebase = merges
 
 [merge]
     conflictStyle = diff3
