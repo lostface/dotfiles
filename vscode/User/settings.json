@@ -59,7 +59,7 @@
   },
 
   // "editor.defaultFormatter": "esbenp.prettier-vscode",
-  "editor.formatOnSave": false,
+  "editor.formatOnSave": true,
   "editor.formatOnPaste": false,
   "editor.formatOnType": false,
   "editor.formatOnSaveTimeout": 5000,
@@ -200,6 +200,7 @@
   "workbench.startupEditor": "none",
   "workbench.editor.enablePreviewFromQuickOpen": false,
   "workbench.editor.highlightModifiedTabs": true,
+  "workbench.settings.editor": "json",
   "workbench.settings.openDefaultSettings": true,
   "workbench.sideBar.location": "left",
 
@@ -212,15 +213,8 @@
   "eslint.autoFixOnSave": false,
   "eslint.alwaysShowStatus": true,
 
-  "prettier.requireConfig": false,
-  "prettier.eslintIntegration": true,
-  "prettier.stylelintIntegration": true,
-  "prettier.tslintIntegration": true,
   "prettier.ignorePath": ".gitignore",
   "prettier.disableLanguages": ["html"],
-  "prettier.printWidth": 120,
-  "prettier.singleQuote": true,
-  "prettier.arrowParens": "avoid",
 
   "vetur.validation.template": false,
   "vetur.validation.script": false,
@@ -317,8 +311,8 @@
   "peacock.affectTitleBar": true,
 
   "peacock.elementAdjustments": {
-    "activityBar": "lighten",
-    "statusBar": "lighten",
+    "activityBar": "none",
+    "statusBar": "none",
     "titleBar": "darken"
   },
 
@@ -499,7 +493,7 @@
   "vsintellicode.java.completionsEnabled": false,
   "vsintellicode.python.completionsEnabled": false,
   "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
-  "workbench.colorTheme": "Night Owl Light",
   "workbench.iconTheme": "material-icon-theme",
-  "material-icon-theme.saturation": 1
+  "material-icon-theme.saturation": 1,
+  "workbench.colorTheme": "Night Owl Light"
 }
