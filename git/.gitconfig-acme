@@ -8,7 +8,7 @@
 [push]
     default = simple
 [pull]
-	rebase = preserve
+	rebase = merges
 [merge]
     conflictStyle = diff3
     tool = code

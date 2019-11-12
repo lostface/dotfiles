@@ -32,9 +32,9 @@ alias grbo='git rebase -i --autostash origin/`git symbolic-ref --short HEAD`';
 alias grbm='git rebase -i --autostash origin/master';
 __git_complete grb _git_rebase
 
-alias grbp='git rebase -p --autostash';
-alias grbpo='git rebase -p --autostash origin/`git symbolic-ref --short HEAD`';
-alias grbpm='git rebase -p --autostash origin/master';
+alias grbp='git rebase -r -i --autostash';
+alias grbpo='git rebase -r -i --autostash origin/`git symbolic-ref --short HEAD`';
+alias grbpm='git rebase -r -i --autostash origin/master';
 __git_complete grbp _git_rebase
 
 alias grbc='git rebase --continue';
