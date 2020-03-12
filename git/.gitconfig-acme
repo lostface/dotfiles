@@ -61,7 +61,7 @@
     br = branch
 
 [winUpdater]
-	recentlySeenVersion = 2.24.0.windows.2
+	recentlySeenVersion = 2.25.1.windows.1
 
 [rerere]
 	enabled = true
@@ -69,3 +69,5 @@
 
 [credential]
 	helper = wincred
+[submodule]
+	recurse = true

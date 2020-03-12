@@ -139,8 +139,9 @@ __git_complete gaa _git_add
 alias gst='git stash';
 alias gstl='git stash list';
 alias gstk='git stash push --keep-index';
+alias gstku='git stash push --keep-index --include-untracked';
 alias gstu='git stash push --include-untracked';
-alias gstall='git stash --all';
+alias gstall='git stash push --all';
 alias gsta='git stash apply';
 alias gstp='git stash pop';
 __git_complete gst _git_stash
