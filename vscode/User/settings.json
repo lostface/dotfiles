@@ -269,25 +269,9 @@
   "git.rebaseWhenSync": true,
   "git.untrackedChanges": "separate",
 
-  "gitlens.recentChanges.highlight.locations": ["overview", "line", "gutter"],
-  "gitlens.currentLine.format": "${id} ${author}, ${agoOrDate} • ${message}",
-  "gitlens.statusBar.format": "${id} ${author}, ${agoOrDate}",
   "gitlens.hovers.currentLine.over": "line",
-  "gitlens.currentLine.enabled": false,
-  "gitlens.codeLens.enabled": false,
-  "gitlens.advanced.messages": {
-    "suppressCommitHasNoPreviousCommitWarning": false,
-    "suppressCommitNotFoundWarning": false,
-    "suppressFileNotUnderSourceControlWarning": false,
-    "suppressGitVersionWarning": false,
-    "suppressLineUncommittedWarning": false,
-    "suppressNoRepositoryWarning": false,
-    "suppressResultsExplorerNotice": false,
-    "suppressShowKeyBindingsNotice": true
-  },
+  "gitlens.hovers.currentLine.enabled": false,
   "gitlens.advanced.telemetry.enabled": false,
-  "gitlens.views.fileHistory.enabled": true,
-  "gitlens.views.lineHistory.enabled": true,
 
   "sync.gist": "4c333bfdf374e853c8f610e8d9634c19",
   "sync.autoDownload": false,
