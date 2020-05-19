@@ -9,7 +9,7 @@
     ".vscode/": false,
     ".tmp/": false,
     "dist/": false,
-    "marathon/dist/": false,
+    "marathon/dist/": false
   },
 
   "files.watcherExclude": {
@@ -17,7 +17,7 @@
     "**/.git/subtree-cache/**": true,
     "**/node_modules/*/**": true,
     "**/.tmp/**": true,
-    "**/dist/**": true,
+    "**/dist/**": true
   },
 
   "search.exclude": {
@@ -26,22 +26,20 @@
     ".vscode/": true,
     ".tmp/": true,
     "dist/": true,
-    "marathon/dist/": true,
-  },  
+    "marathon/dist/": true
+  },
 
   "files.associations": {
     "*.env": "properties"
   },
 
-  "scm.defaultViewMode": "tree",
-
   "[vue]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
     // "editor.defaultFormatter": "octref.vetur",
     // "editor.defaultFormatter": null,
     // "editor.formatOnSave": false,
   },
-  
+
   "[javascript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
@@ -67,7 +65,7 @@
   "editor.codeActionsOnSave": {
     "source.fixAll": false,
     "source.fixAll.eslint": false,
-    "source.organizeImports": false,
+    "source.organizeImports": false
   },
 
   "editor.tabSize": 2,
@@ -100,65 +98,65 @@
 
   "breadcrumbs.enabled": true,
   "breadcrumbs.symbolPath": "last",
-  
-  "breadcrumbs.showArrays": false,
-	"breadcrumbs.showBooleans": false,
-	"breadcrumbs.showClasses": true,
-	"breadcrumbs.showConstants": false,
-	"breadcrumbs.showConstructors": false,
-	"breadcrumbs.showEnumMembers": false,
-	"breadcrumbs.showEnums": true,
-	"breadcrumbs.showEvents": false,
-	"breadcrumbs.showFields": false,
-	"breadcrumbs.showFiles": true,
-	"breadcrumbs.showFunctions": true,
-	"breadcrumbs.showInterfaces": true,
-	"breadcrumbs.showKeys": false,
-	"breadcrumbs.showMethods": true,
-	"breadcrumbs.showModules": true,
-	"breadcrumbs.showNamespaces": true,
-	"breadcrumbs.showNull": false,
-	"breadcrumbs.showNumbers": false,
-	"breadcrumbs.showObjects": false,
-	"breadcrumbs.showOperators": false,
-	"breadcrumbs.showPackages": true,
-	"breadcrumbs.showProperties": false,
-	"breadcrumbs.showStrings": false,
-	"breadcrumbs.showStructs": true,
-	"breadcrumbs.showTypeParameters": false,
-	"breadcrumbs.showVariables": false,
 
-	"outline.showArrays": true,
-	"outline.showBooleans": true,
-	"outline.showClasses": true,
-	"outline.showConstants": true,
-	"outline.showConstructors": true,
-	"outline.showEnumMembers": true,
-	"outline.showEnums": true,
-	"outline.showEvents": true,
-	"outline.showFields": true,
-	"outline.showFiles": true,
-	"outline.showFunctions": true,
-	"outline.showInterfaces": true,
-	"outline.showKeys": true,
-	"outline.showMethods": true,
-	"outline.showModules": true,
-	"outline.showNamespaces": true,
-	"outline.showNull": true,
-	"outline.showNumbers": true,
-	"outline.showObjects": true,
-	"outline.showOperators": true,
-	"outline.showPackages": true,
-	"outline.showProperties": true,
-	"outline.showStrings": true,
-	"outline.showStructs": true,
-	"outline.showTypeParameters": true,
-	"outline.showVariables": true,
+  "breadcrumbs.showArrays": false,
+  "breadcrumbs.showBooleans": false,
+  "breadcrumbs.showClasses": true,
+  "breadcrumbs.showConstants": false,
+  "breadcrumbs.showConstructors": false,
+  "breadcrumbs.showEnumMembers": false,
+  "breadcrumbs.showEnums": true,
+  "breadcrumbs.showEvents": false,
+  "breadcrumbs.showFields": false,
+  "breadcrumbs.showFiles": true,
+  "breadcrumbs.showFunctions": true,
+  "breadcrumbs.showInterfaces": true,
+  "breadcrumbs.showKeys": false,
+  "breadcrumbs.showMethods": true,
+  "breadcrumbs.showModules": true,
+  "breadcrumbs.showNamespaces": true,
+  "breadcrumbs.showNull": false,
+  "breadcrumbs.showNumbers": false,
+  "breadcrumbs.showObjects": false,
+  "breadcrumbs.showOperators": false,
+  "breadcrumbs.showPackages": true,
+  "breadcrumbs.showProperties": false,
+  "breadcrumbs.showStrings": false,
+  "breadcrumbs.showStructs": true,
+  "breadcrumbs.showTypeParameters": false,
+  "breadcrumbs.showVariables": false,
+
+  "outline.showArrays": true,
+  "outline.showBooleans": true,
+  "outline.showClasses": true,
+  "outline.showConstants": true,
+  "outline.showConstructors": true,
+  "outline.showEnumMembers": true,
+  "outline.showEnums": true,
+  "outline.showEvents": true,
+  "outline.showFields": true,
+  "outline.showFiles": true,
+  "outline.showFunctions": true,
+  "outline.showInterfaces": true,
+  "outline.showKeys": true,
+  "outline.showMethods": true,
+  "outline.showModules": true,
+  "outline.showNamespaces": true,
+  "outline.showNull": true,
+  "outline.showNumbers": true,
+  "outline.showObjects": true,
+  "outline.showOperators": true,
+  "outline.showPackages": true,
+  "outline.showProperties": true,
+  "outline.showStrings": true,
+  "outline.showStructs": true,
+  "outline.showTypeParameters": true,
+  "outline.showVariables": true,
 
   "files.autoSave": "onFocusChange",
   "files.insertFinalNewline": true,
   "files.trimFinalNewlines": true,
-  
+
   "search.smartCase": true,
   "search.showLineNumbers": true,
   "search.quickOpen.history.filterSortOrder": "recency",
@@ -210,9 +208,7 @@
   "eslint.alwaysShowStatus": true,
 
   "prettier.ignorePath": ".gitignore",
-  "prettier.disableLanguages": [
-    "html"
-  ],
+  "prettier.disableLanguages": ["html"],
 
   "vetur.validation.template": false,
   "vetur.validation.script": false,
