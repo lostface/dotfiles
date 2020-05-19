@@ -1,4 +1,5 @@
 MERGE_TOOL=code;
+# DIFF_TOOL=kdiff3.exe;
 DIFF_TOOL=p4merge.exe;
 
 MERGED=$1;
@@ -6,16 +7,12 @@ LOCAL=$2;
 BASE=$3;
 REMOTE=$4;
 
-# p4merge
-$DIFF_TOOL $BASE $LOCAL &
-$DIFF_TOOL $BASE $REMOTE &
-
-# kdiff3
+# killing previously opened diff tool instances
+ps | grep $DIFF_TOOL | awk '{print $1}' | xargs kill
+ 
 # $DIFF_TOOL $BASE $LOCAL -L1 "BASE: $BASE" -L2 "LOCAL: $LOCAL" &
 # $DIFF_TOOL $BASE $REMOTE -L1 "BASE: $BASE" -L2 "REMOTE: $REMOTE"  &
-
-# vscode
-# $MERGE_TOOL -r -d $BASE $LOCAL &
-# $MERGE_TOOL -r -d $BASE $REMOTE &
+$DIFF_TOOL $BASE $LOCAL &
+$DIFF_TOOL $BASE $REMOTE &
 $MERGE_TOOL -r $MERGED
 # $MERGE_TOOL -r -d $REMOTE $MERGED
