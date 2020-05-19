@@ -27,8 +27,6 @@
 
 [mergetool "code"]
     cmd = "d:/dev/dotfiles/git/diff/cd_mergetool.sh" "$MERGED" "$LOCAL" "$BASE" "$REMOTE"
-
-
     trustExitCode = false
 
 [mergetool "kdiff"]
@@ -59,7 +57,7 @@
     br = branch
 
 [winUpdater]
-	recentlySeenVersion = 2.24.0.windows.2
+	recentlySeenVersion = 2.25.1.windows.1
 
 [rerere]
 	enabled = true

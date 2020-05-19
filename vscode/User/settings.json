@@ -62,21 +62,18 @@
   "editor.formatOnSave": true,
   "editor.formatOnPaste": false,
   "editor.formatOnType": false,
-  "editor.formatOnSaveTimeout": 5000,
   "editor.lineHeight": 24,
 
   "editor.codeActionsOnSave": {
     "source.fixAll": false,
-    "source.organizeImports": false
+    "source.fixAll.eslint": false,
+    "source.organizeImports": false,
   },
-
-  "editor.codeActionsOnSaveTimeout": 5000,
 
   "editor.tabSize": 2,
   "editor.fontFamily": "Fira Code",
   "editor.fontSize": 14,
   "editor.fontLigatures": true,
-  "editor.renderWhitespace": "selection",
   "editor.rulers": [80, 120, 160],
   "editor.minimap.enabled": false,
 
@@ -94,11 +91,13 @@
   "editor.multiCursorModifier": "ctrlCmd",
 
   "editor.suggest.localityBonus": true,
-  "editor.gotoLocation.multiple": "goto",
+  "editor.gotoLocation.multipleDeclarations": "peek",
+  "editor.gotoLocation.multipleDefinitions": "peek",
   "editor.cursorSurroundingLines": 2,
 
   "explorer.incrementalNaming": "smart",
-  
+  "explorer.openEditors.visible": 0,
+
   "breadcrumbs.enabled": true,
   "breadcrumbs.symbolPath": "last",
   
@@ -159,10 +158,11 @@
   "files.autoSave": "onFocusChange",
   "files.insertFinalNewline": true,
   "files.trimFinalNewlines": true,
-
-  "search.location": "sidebar",
+  
   "search.smartCase": true,
   "search.showLineNumbers": true,
+  "search.quickOpen.history.filterSortOrder": "recency",
+
   "merge-conflict.diffViewPosition": "Below",
 
   "html.format.endWithNewline": true,
@@ -197,6 +197,8 @@
   "window.title": "${dirty}${activeEditorMedium}${separator}${rootName}${separator}${appName}",
 
   "workbench.editor.showTabs": false,
+  "workbench.editor.limit.enabled": true,
+  "workbench.editor.limit.value": 10,
   "workbench.startupEditor": "none",
   "workbench.editor.enablePreviewFromQuickOpen": false,
   "workbench.editor.highlightModifiedTabs": true,
@@ -204,17 +206,13 @@
   "workbench.settings.openDefaultSettings": true,
   "workbench.sideBar.location": "left",
 
-  "eslint.validate": [
-    "javascript",
-    "javascriptreact",
-    { "language": "vue", "autoFix": true }
-  ],
   "eslint.run": "onType",
-  "eslint.autoFixOnSave": false,
   "eslint.alwaysShowStatus": true,
 
   "prettier.ignorePath": ".gitignore",
-  "prettier.disableLanguages": ["html"],
+  "prettier.disableLanguages": [
+    "html"
+  ],
 
   "vetur.validation.template": false,
   "vetur.validation.script": false,
@@ -495,5 +493,5 @@
   "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
   "workbench.iconTheme": "material-icon-theme",
   "material-icon-theme.saturation": 1,
-  "workbench.colorTheme": "Night Owl Light"
+  "workbench.colorTheme": "Night Owl Light (No Italics)"
 }
