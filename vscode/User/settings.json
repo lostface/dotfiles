@@ -269,6 +269,7 @@
   "git.rebaseWhenSync": true,
   "git.untrackedChanges": "separate",
 
+  "gitlens.codeLens.enabled": false,
   "gitlens.currentLine.enabled": false,
   "gitlens.hovers.currentLine.over": "line",
   "gitlens.hovers.currentLine.enabled": false,
