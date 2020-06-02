@@ -10,7 +10,7 @@
 	email = zf_common@outlook.com
     
 [push]
-    default = simple
+    default = current
 
 [pull]
 	rebase = merges
