@@ -166,7 +166,7 @@ __git_complete gbrt _git_branch
 
 alias gmt='git mergetool';
 alias gdt='git difftool';
-alias gdto='git difftool HEAD origin/`git symbolic-ref --short HEAD`';
+alias gdto='git difftool origin/`git symbolic-ref --short HEAD` HEAD';
 alias gdtm='git difftool origin/master HEAD';
 alias grf='git reflog';
 __git_complete grf _git_reflog
