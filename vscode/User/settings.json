@@ -58,6 +58,7 @@
 
   // "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.formatOnSave": false,
+  "editor.formatOnSaveMode": "file",
   "editor.formatOnPaste": false,
   "editor.formatOnType": false,
   "editor.lineHeight": 24,
