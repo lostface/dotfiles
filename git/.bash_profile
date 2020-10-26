@@ -20,9 +20,13 @@ alias nfp='npm run fix:pending'
 alias nd='npm run dev'
 alias np='npm run prod'
 alias nb='npm run build'
+alias nsb='npm run storybook'
 alias nod='npm outdated --long'
 alias nl='npm list'
 alias nl0='npm list --depth 0'
+alias rmc='rm -rf node_modules/.cache'
+alias rmcl='rm -rf node_modules/.cache/eslint'
+alias rmct='rm -rf node_modules/.cache/require-extension-vue'
 
 # git aliases
 alias gf='git fetch -p';
@@ -179,7 +183,8 @@ alias gbsb='git bisect bad';
 alias gbso='git bisect old';
 alias gbsn='git bisect new';
 alias gbsl='git bisect log';
-alias gbsr='git bisect reset';
+alias gbsrs='git bisect reset';
+alias gbsrn='git bisect run';
 __git_complete gbs _git_bisect
 __git_complete gbss _git_bisect
 __git_complete gbsg _git_bisect
